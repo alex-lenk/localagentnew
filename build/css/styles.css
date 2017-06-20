@@ -570,8 +570,8 @@ textarea.form-control {
   background-color: #ffffff;
   color: #4f8ad9;
   font-size: 15px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   text-transform: uppercase;
   border: 2px solid #4f8ad9;
   -webkit-box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
