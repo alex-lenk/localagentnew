@@ -241,11 +241,6 @@
     font-size: 33px;
   }
 
-  .header-center {
-    padding-left: 9%;
-    padding-right: 9%;
-  }
-
   .manual-three .manual-media {
     max-width: 407px;
   }
@@ -438,13 +433,8 @@
     margin-bottom: 73px;
   }
 
-  .header-center {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
   .header-home {
-    background-position: center 44%;
+    background-position: center 42%;
     background-size: cover;
   }
 
@@ -1609,12 +1599,6 @@
     padding-right: 0;
   }
 
-  header::after {
-    height: 82px;
-    background-size: 185vw 26vw;
-    background-position: -17vw 0;
-  }
-
   header .header-title {
     margin-bottom: 15px;
     font-size: 6.8vw;
@@ -1670,10 +1654,6 @@
 
   .tooltip-inner {
     width: 100%;
-  }
-
-  .page header::after {
-    height: 62px;
   }
 
   .page header {
@@ -1844,16 +1824,6 @@
 @media (min-width: 993px) and (max-width: 1200px) {
   header {
     padding-top: 37px;
-  }
-
-  header::before {
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
   }
 
   .header-home {
@@ -2281,14 +2251,6 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min--moz-device-pixel-ratio: 1.5) {
-  header::after {
-    background-image: url(../img/bg-header-line@x2.png);
-  }
-
-  .header-home::after {
-    background-image: url(../img/bg-header-line@x2.png);
-  }
-
   .manual-two {
     background: url(../img/top-decor-line@x2.jpg) no-repeat top center, url(../img/bottom-decor-line@x2.jpg) no-repeat bottom center;
   }
@@ -2313,14 +2275,6 @@
   }
 
   header {
-    background-size: cover;
-  }
-
-  header::after {
-    background-size: 112% auto;
-  }
-
-  header::before {
     background-size: cover;
   }
 

@@ -35,7 +35,11 @@
         <div class="row">
             <div class="logo col-md-3 col-sm-4 col-xs-10">
     <a href="index.html">
-        <img src="img/logo.png" alt="LocalAgent - Умное страхование">
+        <picture>
+            <source srcset="img/logo@2x.png"
+                    media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
+            <img src="img/logo.png" alt="LocalAgent - Умное страхование">
+        </picture>
     </a>
 </div>
 
@@ -44,27 +48,26 @@
         <span class="text"></span>
     </button>
     <ul class="navbar-menu list-unstyled">
-        <li><a href="about.html">О нас</a></li>
-        <li><a href="blog.html">Блог</a></li>
+        <li><a href="#">F.A.Q.</a></li>
         <li><a href="contacts.html">Контакты</a></li>
     </ul>
 </nav>
 
-            <div class="header-center">
-    <h1 class="header-title">Хотите застроховать машину, но не хотите переплачивать?</h1>
-    <p class="intro-text">Заполните короткую заявку и получите лучшие предложения от локальных страховых
-        агентов с точным расчетом от надежных страховых компаний </p>
+            <div class="header-center col-xs-12">
+    <h1 class="header-title">Хотите застраховать автомобиль без лишних <br> переплат?</h1>
+    <p class="header-intro-text">Заполните короткую форму и получите лучшие предложения от локальных страховых агентов с <br>
+        точным расчетом стоимости полиса.</p>
 
-    <form action="#" class="insurance hidden-xs">
-        <ul class="insurance-type">
-            <li class="insurance-type-label">Тип страховки:</li>
-            <li class="current insurance-type-point">КАСКО</li>
-            <li class="insurance-type-point">Осаго</li>
+    <form action="#" class="header-form hidden-xs">
+        <ul class="header-form-type">
+            <li class="header-form-type_label">Тип страховки:</li>
+            <li class="header-form-type_item header-form-type_current">КАСКО</li>
+            <li class="header-form-type_item">Осаго</li>
         </ul>
 
-        <div class="insurance-search">
-            <div class="insurance-input-area">
-                <input type="text" class="insurance-input" placeholder="Марка автомобиля">
+        <div class="header-form-search">
+            <div class="header-form-input">
+                <input type="text" class="header-form-field" placeholder="Марка автомобиля">
 
                 <svg class="arrow">
                     <use xlink:href="img/sprite.svg#arrow"></use>
@@ -74,6 +77,15 @@
             <button class="btn btn-blue">Начать</button>
         </div>
     </form>
+
+    <ul class="header-partners list-unstyled">
+        <li class="first"><a href="#"><img src="img/partners-header/ingosstrah@2x.png" alt=""></a></li>
+        <li class="second"><a href="#"><img src="img/partners-header/peco@2x.png" alt=""></a></li>
+        <li class="third"><a href="#"><img src="img/partners-header/zetta@2x.png" alt=""></a></li>
+        <li class="forth"><a href="#"><img src="img/partners-header/renessans@2x.png" alt=""></a></li>
+        <li class="fifth"><a href="#"><img src="img/partners-header/bck@2x.png" alt=""></a></li>
+        <li class="sixth"><a href="#"><img src="img/partners-header/gaide@2x.png" alt=""></a></li>
+    </ul>
 
     <a href="#" class="btn btn-green visible-xs-inline-block">Получить предложения</a>
 </div>
@@ -409,7 +421,7 @@
 
 <!--<script src="js/lib.js"></script>-->
 
-<script src="js/common.js"></script>
+<script src="js/custom.js"></script>
 
 <script src="http://cdn.trackduck.com/toolbar/prod/td.js" async data-trackduck-id="58d6467f8528fe714ed2f9e9"></script>
 

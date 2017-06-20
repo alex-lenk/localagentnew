@@ -1,9 +1,20 @@
 $(document).ready(function () {
+    /* для открывания мобильного меню */
     $(".navbar-toggle").click(
         function () {
             $('.navbar').toggleClass("navbar-active");
         }
     );
+
+    /* для переключения класов пунктов в шапке формы на главной */
+    var headerFormTypeItem = $('.header-form-type_item');
+    headerFormTypeItem.on('click', function () {
+        headerFormTypeItem.removeClass('header-form-type_current');
+        $(this).addClass('header-form-type_current');
+    });
+
+
+
 
     $(".contacts-form-toggle").click(
         function () {
@@ -71,22 +82,18 @@ $(document).ready(function () {
 var searchLeftContent = $(".search-left-content");
 
 /*searchLeftContent.mCustomScrollbar({
-    theme: "dark-3"
-});
+ theme: "dark-3"
+ });
 
 
-$(".make-choice").mCustomScrollbar({
-    theme: "dark-3"
-});
+ $(".make-choice").mCustomScrollbar({
+ theme: "dark-3"
+ });
 
-$(".insurance-drobdown-scroll").mCustomScrollbar({
-    theme: "dark-3"
-});*/
+ $(".insurance-drobdown-scroll").mCustomScrollbar({
+ theme: "dark-3"
+ });*/
 
-$('.insurance-type-point').on('click', function () {
-    $('.insurance-type-point').removeClass('current');
-    $(this).addClass('current');
-});
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({
