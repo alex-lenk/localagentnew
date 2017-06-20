@@ -1,0 +1,139 @@
+.header-faq {
+  background-image: url(../img/bg-faq.jpg);
+  background-repeat: no-repeat;
+  background-size: 106% auto;
+  background-position: -5vw -12vw;
+}
+
+.faq {
+  padding-top: 120px;
+  padding-bottom: 35px;
+}
+
+.faq .title {
+  margin-bottom: 52px;
+  text-align: center;
+}
+
+.faq .plus, .faq .minus {
+  fill: #4f8ad9;
+  vertical-align: middle;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -11px;
+}
+
+.faq .plus {
+  display: none;
+}
+
+.faq .minus {
+  display: block;
+  top: 33px;
+  left: -4px;
+  width: 28px;
+  height: 31px;
+}
+
+.faq .collapsed {
+  color: #505b6a;
+  border-bottom-color: #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.faq .collapsed .minus {
+  display: none;
+}
+
+.faq .collapsed .plus {
+  display: inline-block;
+}
+
+.faq .collapsed:hover {
+  color: #4f8ad9;
+}
+
+.faq .collapsed::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.faq-title {
+  margin: 0;
+  padding: 30px 0 27px 61px;
+  color: #4f8ad9;
+  font-size: 20px;
+  font-weight: normal;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  position: relative;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.faq-title::before, .faq-title::after {
+  background-color: #4f8ad9;
+  border-radius: 11px;
+  content: '';
+  position: absolute;
+}
+
+.faq-title::before {
+  top: 37px;
+  left: 0;
+  width: 21px;
+  height: 2px;
+}
+
+.faq-title::after {
+  top: 28px;
+  left: 10px;
+  width: 2px;
+  height: 21px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.faq-body {
+  padding: 15px 23px;
+  background-color: #fafafa;
+  line-height: 1.3;
+}
+
+.faq-sidebar {
+  padding: 31px 36px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.faq-sidebar .btn-transparent {
+  margin-top: 30px;
+}
+
+.faq-sidebar-question {
+  width: 125px;
+  height: 125px;
+  padding: 34px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  font-size: 19px;
+  background-color: #a7c343;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.faq-sidebar-question svg {
+  fill: #ffffff;
+}

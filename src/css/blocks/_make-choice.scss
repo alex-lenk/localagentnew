@@ -1,0 +1,76 @@
+.make-choice {
+  width: 292px;
+  height: 225px;
+  padding: 36px 21px 29px 33px;
+  border-radius: 32px;
+  background-color: #ffffff;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.18);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 17px;
+  z-index: 96;
+  display: none;
+}
+
+.make-choice::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  right: 36px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom: 10px solid #ffffff;
+}
+
+.make-choice-list .arrow {
+  width: 10px;
+  height: 10px;
+  fill: #505b6a;
+}
+
+.make-choice-list li {
+  text-align: left;
+  cursor: pointer;
+  font-family: "Roboto-Regular", sans-serif;
+  color: #505b6a;
+}
+
+.make-choice-list li:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.make-choice-list li:hover {
+  color: #4f8ad9;
+}
+
+.make-choice-list li:hover .arrow {
+  fill: #4f8ad9;
+}
+
+.make-choice-active {
+  display: block;
+}
+
+.select-open + .arrow {
+  width: 17px;
+  height: 12px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  fill: #c0b7b7;
+  position: absolute;
+  top: 50%;
+  right: 33px;
+  margin-top: -6px;
+  z-index: 18;
+  cursor: pointer;
+}
+
+.select-active + .arrow {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  fill: #4f8ad9;
+}

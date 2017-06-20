@@ -1,0 +1,81 @@
+.insurance-steps {
+  counter-reset: item;
+  list-style: none;
+  position: relative;
+}
+
+.insurance-steps li {
+  color: #a7c343;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 12;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.insurance-steps .current {
+  color: #4f8ad9;
+}
+
+.insurance-steps .current ~ li {
+  color: #c0b7b7;
+}
+
+.insurance-steps .current ~ li .selected {
+  display: none;
+}
+
+.insurance-steps .current ~ li svg:not(.selected):not(.arrow-right) {
+  display: block;
+}
+
+.insurance-steps .current .selected {
+  display: none;
+}
+
+.insurance-steps .current svg:not(.selected) {
+  display: block;
+}
+
+.insurance-steps svg {
+  fill: #f2f9fb;
+  width: 24px;
+  height: 26px;
+  position: absolute;
+  z-index: 5;
+}
+
+.insurance-steps svg:not(.selected) {
+  display: none;
+}
+
+.insurance-steps .driver, .insurance-steps .list {
+  width: 23px;
+  height: 23px;
+}
+
+.insurance-steps .arrow-right {
+  margin-left: 20px;
+}
+
+.insurance-steps .arrow-right svg {
+  width: 20px;
+  height: 15px;
+  fill: #c0b7b7;
+}
+
+.insurance-steps .selected {
+  fill: #ffffff;
+  z-index: 20;
+  position: absolute;
+}
+
+.hint-box-text {
+  width: 319px;
+  right: -100%;
+  left: auto;
+}
+
+.hint-box-text::before {
+  left: auto;
+  right: 31px;
+}

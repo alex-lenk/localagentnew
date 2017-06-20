@@ -1,0 +1,43 @@
+.partners {
+  padding-top: 90px;
+  padding-bottom: 115px;
+}
+
+.partners-hint {
+  margin-bottom: 65px;
+  font-size: 16px;
+  color: #6ba0b2;
+  text-align: right;
+  font-style: italic;
+}
+
+.partners-hint .move {
+  margin: 2px 0 0 10px;
+  width: 24px;
+  height: 27px;
+  fill: #4f8ad9;
+  vertical-align: bottom;
+}
+
+.partners-carousel {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.partners-carousel .swiper-slide {
+  min-height: 50px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.partners-carousel img {
+  max-width: 80%;
+}

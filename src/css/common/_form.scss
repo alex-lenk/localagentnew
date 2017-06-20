@@ -1,0 +1,180 @@
+.hide-placeholder::-webkit-input-placeholder {
+  opacity: 1;
+  color: #b0aaaa;
+  transition: opacity 0.3s ease;
+}
+
+.hide-placeholder::-moz-placeholder {
+  opacity: 1;
+  color: #b0aaaa;
+  transition: opacity 0.3s ease;
+}
+
+.hide-placeholder:-moz-placeholder {
+  opacity: 1;
+  color: #b0aaaa;
+  transition: opacity 0.3s ease;
+}
+
+.hide-placeholder:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #b0aaaa;
+}
+
+.hide-placeholder:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hide-placeholder:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hide-placeholder:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hide-placeholder:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group .data {
+  width: 19px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 31px;
+  margin-top: -10px;
+  fill: #c0b7b7;
+}
+
+.form-data-wrap {
+  position: relative;
+}
+
+.datepicker-here-open + .data {
+  fill: #74a6b7;
+}
+
+.form-control {
+  width: 100%;
+  height: 55px;
+  padding: 0 32px 2px;
+  border: 1px solid #e5e5e5;
+  font-size: 16px;
+  display: block;
+  border-radius: 32px;
+  background-color: #ffffff;
+  color: #505b6a;
+  transition: all .3s ease;
+  font-weight: normal;
+  font-family: "Roboto-Light", sans-serif;
+}
+
+input[type="text"], input[type="email"], input[type="name"], input[type="tel"], textarea {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-appearance: none !important;
+}
+
+.form-control:focus, .form-control:active {
+  border-color: #6ba0b2;
+}
+
+textarea.form-control {
+  height: 188px;
+  padding: 19px 47px 10px;
+  resize: none;
+  overflow: hidden;
+}
+
+.form-hours {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-hours .form-control {
+  max-width: 100px;
+  max-height: 50px;
+  padding-right: 10px;
+}
+
+.form-hours .tire {
+  padding: 0 10px;
+  font-size: 18px;
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.required-field {
+  position: relative;
+}
+
+.required-field .form-control {
+  padding-left: 50px;
+}
+
+.required-field:before {
+  content: '*';
+  position: absolute;
+  top: 17px;
+  left: 31px;
+  color: #df4a4a;
+  font-size: 23px;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.required-field[class^="col-"]:before, .required-field[class*=" col-"]:before {
+  left: 46px;
+}
+
+.error-field .form-control {
+  background-color: #ffe8e8;
+  border-color: #ff9191;
+}
+
+.error-field .form-control::-webkit-input-placeholder {
+  color: #505b6a;
+}
+
+.error-field .form-control::-moz-placeholder {
+  color: #505b6a;
+}
+
+.error-field .form-control:-moz-placeholder {
+  color: #505b6a;
+}
+
+.error-field .form-control:-ms-input-placeholder {
+  color: #505b6a;
+}
+
+.field-filled .selected {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 21px;
+  right: 49px;
+  fill: #a7c343;
+}
+
+.field-filled::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.field-filled .form-control {
+  border-color: #c8d3a1;
+}

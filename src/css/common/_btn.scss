@@ -1,0 +1,146 @@
+.btn {
+  border: 0;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  transition: all .3s ease;
+}
+
+.btn-blue {
+  padding: 20px 34px;
+  background-color: #4f8ad9;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 12px rgba(79, 138, 217, 0.24);
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-blue .arrow-right {
+  width: 20px;
+  height: 12px;
+  margin-left: 8px;
+  fill: #fff;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+}
+
+.btn-blue .letter {
+  width: 27px;
+  height: 18px;
+  margin-left: 8px;
+  fill: #fff;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -2px;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: #a7c343;
+}
+
+.btn-transparent {
+  padding: 18px 29px;
+  background-color: #ffffff;
+  color: #4f8ad9;
+  font-size: 15px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: 2px solid #4f8ad9;
+  box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-transparent:hover, .btn-transparent:active {
+  background-color: #4f8ad9;
+  color: #ffffff;
+  box-shadow: 0 8px 12px 0 rgba(80, 91, 106, 0.25);
+}
+
+.btn-transparent:active, .btn-transparent:disabled {
+  box-shadow: none;
+}
+
+.btn-green {
+  padding: 20px 29px;
+  background-color: #a7c343;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-green:hover {
+  background-color: #4f8ad9;
+  color: #fff;
+}
+
+.btn-white {
+  padding: 21px 37px 18px 34px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #4f8ad9;
+  border-radius: 32px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-white svg {
+  fill: #4f8ad9;
+  transition: all 0.3s ease;
+}
+
+.btn-white .search {
+  width: 21px;
+  height: 18px;
+}
+
+.btn-white .arrow-right {
+  width: 20px;
+  height: 12px;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 1px;
+}
+
+.btn-white:hover {
+  background-color: #505b6a;
+  color: #ffffff;
+}
+
+.btn-white:hover svg {
+  fill: #ffffff;
+}
+
+.btn-back {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #505b6a;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-back:hover {
+  color: #4f8ad9;
+}
+
+.btn-back:hover .arrow-right {
+  fill: #4f8ad9;
+}
+
+.btn-back .arrow-right {
+  width: 20px;
+  height: 12px;
+  margin-right: 10px;
+  -webkit-transform: rotateZ(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotateZ(180deg);
+  fill: #505b6a;
+}

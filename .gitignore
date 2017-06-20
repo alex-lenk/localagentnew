@@ -1,13 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
-vcs.xml
-desktop.ini
-test/
-block
 bower_components
 node_modules
 sources/
 localagentnew.iml
-js/
-css/
-fonts/

@@ -1,0 +1,145 @@
+.manual {
+  padding-top: 23px;
+  padding-bottom: 150px;
+}
+
+.manual .container:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.manual .title {
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.manual .btn-blue {
+  margin-top: 22px;
+}
+
+.manual-pre-title {
+  margin-bottom: 103px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.manual-one {
+  padding-bottom: 85px;
+}
+
+.manual-one .manual-media img {
+  margin-left: -30px;
+  box-shadow: none;
+}
+
+.manual-one .manual-media::before {
+  right: 16%;
+  content: '1';
+  top: 10px;
+}
+
+.manual-one .manual-text h2 {
+  padding-top: 52px;
+}
+
+.manual-two {
+  padding: 122px 0 152px;
+  position: relative;
+}
+
+.manual-two::before, .manual-two::after {
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
+.manual-two::before {
+  height: 114px;
+  top: 0;
+  background-image: url(../img/top-decor-line.png);
+}
+
+.manual-two::after {
+  height: 86px;
+  bottom: 0;
+  background-image: url(../img/bottom-decor-line.png);
+}
+
+.manual-two .manual-text {
+  margin: 0 125px 0 32px;
+}
+
+.manual-two .manual-media {
+  text-align: center;
+}
+
+.manual-two .manual-media::before {
+  left: -27px;
+  content: '2';
+}
+
+.manual-three {
+  padding-top: 60px;
+}
+
+.manual-three .manual-media {
+  margin: 0 110px 0 32px;
+}
+
+.manual-three .manual-media::before {
+  right: -29px;
+  content: '3';
+}
+
+.manual-media {
+  position: relative;
+}
+
+.manual-media:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.manual-media img {
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.18);
+}
+
+.manual-media::before {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  top: -19px;
+  border-radius: 50%;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: #a7c343;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.manual-media-map {
+  max-width: 364px;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.2);
+}
+
+.manual-text {
+  line-height: 1.2;
+}
+
+.manual-text h2 {
+  margin-bottom: 29px;
+  padding-top: 28px;
+}

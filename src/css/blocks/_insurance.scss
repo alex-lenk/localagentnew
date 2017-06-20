@@ -1,0 +1,247 @@
+.insurance-type {
+  margin-bottom: 15px;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.insurance-type .current {
+  border-bottom-color: #fff;
+}
+
+.insurance-type-label {
+  margin-right: 25px;
+  font-size: 16px;
+}
+
+.insurance-type-point {
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.insurance-type-point:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.insurance-type-point:not(.current) {
+  color: #dfdfdf;
+  cursor: pointer;
+}
+
+.insurance-type-point:not(.current):hover {
+  color: #ffffff;
+}
+
+.insurance-search {
+  width: 100%;
+  max-width: 808px;
+  height: 65px;
+  border-radius: 33px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.insurance-search:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.insurance-search .btn-blue {
+  width: 165px;
+  height: 65px;
+  padding-top: 25px;
+  margin-right: -5px;
+  float: right;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 0 33px 33px 0;
+  position: relative;
+  z-index: 12;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.insurance-input-area {
+  width: calc(100% - 160px);
+  float: left;
+  position: relative;
+  z-index: 15;
+}
+
+.insurance-input {
+  width: 100%;
+  height: 65px;
+  padding: 0 41px;
+  background-color: transparent;
+  border-radius: 33px 0 0 33px;
+  position: relative;
+  z-index: 10;
+  color: #505b6a;
+  font-size: 16px;
+  font-weight: normal;
+  border: 2px solid transparent;
+  border-right: 0;
+  font-family: "Roboto-Light", sans-serif;
+}
+
+.insurance-input + .arrow {
+  width: 17px;
+  height: 12px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  fill: #c0b7b7;
+  position: absolute;
+  top: 28px;
+  right: 43px;
+  z-index: 18;
+  cursor: pointer;
+}
+
+.insurance-search-open .insurance-input {
+  background-color: #f2f9fb;
+  border-color: #ffffff;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.insurance-search-open .insurance-input + .arrow {
+  fill: #4f8ad9;
+}
+
+.insurance-drobdown {
+  padding-left: 40px;
+}
+
+.insurance-drobdown .insurance-drobdown-scroll {
+  height: 230px;
+  padding: 35px 25px 30px 0;
+  background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  border: 1px solid #ededed;
+  border-top: 0;
+}
+
+.insurance-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.insurance-list .arrow {
+  width: 10px;
+  height: 10px;
+  fill: #505b6a;
+}
+
+.insurance-list li {
+  top: -30px;
+  padding-top: 30px;
+  position: relative;
+  padding-left: 33px;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+  text-align: left;
+  color: #505b6a;
+  cursor: pointer;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.insurance-list li:hover {
+  color: #4f8ad9;
+}
+
+.insurance-list li:hover .arrow {
+  fill: #4f8ad9;
+}
+
+.brand, .model, .year {
+  float: left;
+  position: relative;
+}
+
+.brand .selected, .model .selected, .year .selected {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  fill: #a7c343;
+  display: none;
+}
+
+.brand .arrow, .model .arrow, .year .arrow {
+  width: 17px;
+  height: 12px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  fill: #c0b7b7;
+  position: absolute;
+  top: 50%;
+  right: 23px;
+  margin-top: -6px;
+  z-index: 18;
+  cursor: pointer;
+}
+
+.brand {
+  width: 100%;
+  border-right: 1px solid #ededed;
+}
+
+.brand .selected {
+  left: 37px;
+}
+
+.model {
+  width: 63%;
+  border-right: 1px solid #ededed;
+}
+
+.year {
+  width: 27%;
+}
+
+.selected-good .insurance-input {
+  padding-left: 45px;
+}
+
+.selected-good:first-of-type {
+  width: 37%;
+}
+
+.selected-good:first-of-type .insurance-input {
+  padding-left: 59px;
+}
+
+.selected-good:nth-of-type(2) {
+  width: 36%;
+}
+
+.selected-good + div {
+  display: block;
+}
+
+.selected-good .selected {
+  display: block;
+}
+
+.model, .year {
+  display: none;
+}
+
+.model .selected, .year .selected {
+  left: 22px;
+}

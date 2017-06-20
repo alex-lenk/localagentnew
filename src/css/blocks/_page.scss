@@ -1,0 +1,76 @@
+.content-page {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.content-page h2 {
+  margin-bottom: 15px;
+}
+
+.content-page p {
+  line-height: 1.3;
+}
+
+.page header {
+  padding-bottom: 55px;
+}
+
+.page header:after {
+  height: 127px;
+}
+
+.page .header-center {
+  padding-top: 93px;
+}
+
+.page .faq {
+  padding-top: 5px;
+  padding-bottom: 70px;
+}
+
+.page .latest-articles {
+  position: relative;
+  z-index: 10;
+}
+
+.page .latest-articles:after {
+  background: url(../img/bg-footer-decor.png) no-repeat top center;
+  width: 100%;
+  height: 99px;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  bottom: -99px;
+  left: 0;
+  z-index: 6;
+}
+
+.page footer::after {
+  background: url(../img/bg-footer-decor-pages.png) no-repeat top center;
+}
+
+.page .footer-find-agent {
+  display: none;
+}
+
+.about-advantages {
+  padding-top: 35px;
+}
+
+.about-advantages-title {
+  margin-bottom: 35px;
+}
+
+.about-advantages-media {
+  height: 230px;
+}
+
+.about-advantages-text {
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.about-advantages-bottom {
+  padding-top: 55px;
+}

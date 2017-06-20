@@ -1,0 +1,517 @@
+.search-page {
+  height: 100%;
+}
+
+.search-page body {
+  height: 100%;
+}
+
+.search-page .btn-white:hover {
+  background-color: #a7c343;
+}
+
+.search-wrapper {
+  width: 100%;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-search {
+  height: 110px;
+  padding-right: 15px;
+  overflow: hidden;
+}
+
+.header-search::after {
+  display: none;
+}
+
+.header-search .logo {
+  position: relative;
+  z-index: 10;
+}
+
+.header-search-right {
+  width: 100%;
+  padding: 18px 40px 16px 34px;
+  max-width: 291px;
+  margin-top: 9px;
+  text-align: right;
+  position: relative;
+  z-index: 9;
+  float: right;
+}
+
+.header-search-right .phone-help {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.search-panel-top {
+  height: 80px;
+  padding: 0 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.result-list {
+  height: 100%;
+  font-size: 0;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.result-list li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  letter-spacing: -.15px;
+  line-height: 1.3;
+}
+
+.result-list .agent {
+  width: 22px;
+  height: 26px;
+  margin-right: 20px;
+  fill: #505b6a;
+}
+
+.result-list .text-nowrap {
+  padding-right: 7px;
+}
+
+.searching-offers {
+  display: none;
+  height: 100%;
+  padding: 0 15px;
+  background-color: #ffffff;
+  font-size: 18px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.searching-offers .search {
+  width: 24px;
+  height: 27px;
+  margin-right: 20px;
+  fill: #505b6a;
+}
+
+.searching-offers-wrap .searching-offers {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searching-offers-wrap .search-left {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .header-search {
+    background-color: #fff;
+    z-index: 50;
+  }
+
+  .searching-offers-wrap .search-left {
+    margin-top: -490px;
+  }
+
+  .search-panel-top {
+    z-index: 51;
+  }
+}
+
+@media (min-width: 769px) {
+  .searching-offers-wrap .search-left {
+    margin-left: -421px;
+  }
+}
+
+.searching-offers-wrap .result-list, .searching-offers-wrap .agent-point {
+  display: none;
+}
+
+li.search-show-map {
+  width: 100%;
+  margin: 20px 0 0;
+  display: block;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 15px;
+}
+
+li.search-show-map a {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+
+li.search-show-map a:hover {
+  border-bottom-color: transparent;
+}
+
+.search-panel-bottom {
+  width: 100%;
+  height: 38px;
+  border-top: 3px solid #ffffff;
+  background-color: #f2f9fb;
+  position: fixed;
+  z-index: 55;
+  left: 0;
+  bottom: 0;
+}
+
+.search-left {
+  will-change: transform;
+  transition: all 300ms linear;
+}
+
+.search-left-open {
+  box-shadow: 8px 0 12px rgba(155, 155, 155, 0.25);
+  z-index: 5;
+}
+
+.search-left-open .search-left-head-arrow {
+  width: 42px;
+}
+
+.search-left-open .search-left-head-arrow .arrow {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.search-left-open .insurance-agent:not(:last-of-type) {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.search-left-open .insurance-agent-list li:before {
+  content: counters(item, "") ".";
+}
+
+.search-left-closed {
+  -webkit-flex-basis: 70px;
+  -ms-flex-preferred-size: 70px;
+  flex-basis: 70px;
+  max-width: 70px;
+}
+
+.search-left-closed .search-left-head-text {
+  display: none;
+}
+
+.search-left-closed .search-left-head-arrow {
+  width: 100%;
+}
+
+.search-left-closed .insurance-agent {
+  padding-bottom: 47px;
+}
+
+.search-left-closed .insurance-agent-location, .search-left-closed .insurance-agent-name, .search-left-closed .insurance-agent-name + .text-selection, .search-left-closed .collapse,
+.search-left-closed .insurance-agent-more {
+  display: none;
+}
+
+.search-left-closed .insurance-agent-list li:before {
+  content: counters(item, "") "";
+  top: 60px;
+  left: 28px;
+}
+
+.search-left-closed .insurance-agent-face {
+  width: 51px;
+  height: 51px;
+  border: 3px solid #fff;
+  margin-left: 9px;
+}
+
+.search-left-closed .mCSB_inside > .mCSB_container {
+  margin-right: 10px;
+}
+
+.search-left-head {
+  height: 80px;
+  margin-bottom: 44px;
+  background-color: #a7c343;
+  color: #ffffff;
+  font-size: 18px;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.search-left-head-arrow {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #a7c343;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-left-head-arrow .arrow {
+  fill: #ffffff;
+  width: 20px;
+  height: 25px;
+}
+
+.search-right {
+  background: url(../img/example/ex-map.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  line-height: 1.2;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.mCS-light-3.mCSB_scrollTools .mCSB_draggerRail,
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  width: 6px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #6ba0b2;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: #4f8ad9;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #4f8ad9;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #c0b7b7;
+}
+
+.mCSB_scrollTools {
+  opacity: 1;
+}
+
+.insurance-agent-list {
+  counter-reset: item;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.insurance-agent-list li:before {
+  counter-increment: item;
+  font-weight: normal;
+  position: absolute;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.insurance-agent {
+  position: relative;
+}
+
+.insurance-agent-info {
+  margin-bottom: 20px;
+}
+
+.insurance-agent-info:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.insurance-agent-info .text-selection {
+  margin: 5px 0 21px;
+}
+
+.insurance-agent-face {
+  float: left;
+  background-color: #4f8ad9;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.insurance-agent-face img {
+  position: relative;
+  z-index: 5;
+}
+
+.insurance-agent-face .user {
+  width: 23px;
+  height: 25px;
+  fill: #ffffff;
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  z-index: 4;
+}
+
+.insurance-agent-name {
+  padding-left: 20px;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.insurance-agent-location {
+  font-size: 15px;
+  padding-left: 112px;
+  position: relative;
+}
+
+.insurance-agent-location .location {
+  width: 21px;
+  height: 23px;
+  fill: #505b6a;
+  position: absolute;
+  top: -1px;
+  left: 85px;
+}
+
+.insurance-agent-desc {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #f2f9fb;
+}
+
+.insurance-agent-more {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.insurance-agent-more .arrow {
+  width: 11px;
+  height: 13px;
+  margin-left: 4px;
+  vertical-align: top;
+  fill: #4f8ad9;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.insurance-agent-more .more {
+  display: none;
+}
+
+.insurance-agent-more.collapsed .arrow {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.insurance-agent-more.collapsed .more {
+  display: inline;
+}
+
+.insurance-agent-more.collapsed .roll-up {
+  display: none;
+}
+
+.search-map {
+  width: 100%;
+  height: 630px;
+  position: relative;
+}
+
+.agent-point {
+  width: 68px;
+  height: 68px;
+  font-size: 14px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #4f8ad9;
+  box-shadow: inset 0 0 0 7px #fff, 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.agent-point img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 7px solid #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+.agent-point .agent-point-number {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  z-index: 7;
+  text-align: center;
+  width: 100%;
+}
+
+.agent-point::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-bottom-width: 0;
+  border-top: 26px solid #ffffff;
+  position: absolute;
+  bottom: -23px;
+  left: 21px;
+  z-index: 5;
+}
+
+.agent-point .user {
+  width: 23px;
+  height: 25px;
+  fill: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  z-index: 4;
+}
+
+.your-location {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  background-color: #4f8ad9;
+  box-shadow: 0 0 0 7px rgba(79, 138, 217, 0.4), 0 0 0 17px rgba(79, 138, 217, 0.12), 0 0 0 27px rgba(79, 138, 217, 0.07);
+}
