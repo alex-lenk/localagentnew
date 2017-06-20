@@ -201,10 +201,6 @@
   .title {
     font-size: 33px;
   }
-  .header-center {
-    padding-left: 9%;
-    padding-right: 9%;
-  }
   .manual-three .manual-media {
     max-width: 407px;
   }
@@ -212,6 +208,7 @@
     padding-right: 0;
   }
   .manual-text p {
+    margin-bottom: 12px;
     font-size: 18px;
   }
   .footer-nav {
@@ -370,21 +367,17 @@
   .manual-pre-title {
     margin-bottom: 73px;
   }
-  .header-center {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
   .header-home {
-    background-position: center 44%;
+    background-position: center 42%;
     background-size: cover;
   }
   .manual-one {
-    padding-bottom: 40px;
+    padding-bottom: 58px;
   }
   .manual-one .manual-media {
     width: 511px;
-    margin-left: 32px;
-    margin-right: 46px;
+    margin-left: 28px;
+    margin-right: 44px;
   }
   .manual-one .manual-text {
     max-width: 480px;
@@ -1357,16 +1350,6 @@
 }
 
 @media (max-width: 414px) {
-  .manual-two::before {
-    height: 60px;
-    background-image: url(../img/blue-line-xs@2x.jpg);
-    background-size: contain;
-  }
-  .manual-two::after {
-    height: 60px;
-    background-image: url(../img/gray-line-xs@2x.jpg);
-    background-size: contain;
-  }
   .btn-blue {
     padding-left: 30px;
     padding-right: 30px;
@@ -1383,11 +1366,6 @@
   }
   header .logo {
     padding-right: 0;
-  }
-  header::after {
-    height: 82px;
-    background-size: 185vw 26vw;
-    background-position: -17vw 0;
   }
   header .header-title {
     margin-bottom: 15px;
@@ -1433,9 +1411,6 @@
   }
   .tooltip-inner {
     width: 100%;
-  }
-  .page header::after {
-    height: 62px;
   }
   .page header {
     height: 155px;
@@ -1571,15 +1546,6 @@
 @media (min-width: 993px) and (max-width: 1200px) {
   header {
     padding-top: 37px;
-  }
-  header::before {
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
   }
   .header-home {
     background-size: cover;
@@ -1936,12 +1902,6 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min--moz-device-pixel-ratio: 1.5) {
-  header::after {
-    background-image: url(../img/bg-header-line@x2.png);
-  }
-  .header-home::after {
-    background-image: url(../img/bg-header-line@x2.png);
-  }
   .manual-two {
     background: url(../img/top-decor-line@x2.jpg) no-repeat top center, url(../img/bottom-decor-line@x2.jpg) no-repeat bottom center;
   }
@@ -1962,12 +1922,6 @@
     background-position: 50% 29%;
   }
   header {
-    background-size: cover;
-  }
-  header::after {
-    background-size: 112% auto;
-  }
-  header::before {
     background-size: cover;
   }
   .manual-two {

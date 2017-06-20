@@ -56,15 +56,6 @@ header .container {
   padding-top: 136px;
 }
 
-.header-home .insurance-type {
-  padding-left: 40px;
-}
-
-.header-about {
-  background: url(../img/bg-about-us.jpg) no-repeat 0 0;
-  background-size: cover;
-}
-
 .header-form {
   max-width: 945px;
   margin: 0 auto 110px;
@@ -190,3 +181,10 @@ header .container {
     max-width: (272px / 2);
   }
 }
+
+/* Old @todo */
+.header-about {
+  background: url(../img/bg-about-us.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+

@@ -1,6 +1,10 @@
 .manual {
-  padding-top: 23px;
+  padding-top: 87px;
   padding-bottom: 150px;
+
+  .btn-blue {
+    margin-top: 22px;
+  }
 }
 
 .manual .container:after {
@@ -9,13 +13,9 @@
   content: "";
 }
 
-.manual .title {
-  margin-bottom: 17px;
+.manual-title {
+  margin-bottom: 15px;
   text-align: center;
-}
-
-.manual .btn-blue {
-  margin-top: 22px;
 }
 
 .manual-pre-title {
@@ -27,6 +27,10 @@
 
 .manual-one {
   padding-bottom: 85px;
+  .h3 {
+    padding-top: 54px;
+    margin-bottom: 27px;
+  }
 }
 
 .manual-one .manual-media img {
@@ -45,28 +49,13 @@
 }
 
 .manual-two {
-  padding: 122px 0 152px;
+  padding: 105px 0 98px;
   position: relative;
-}
-
-.manual-two::before, .manual-two::after {
-  width: 100%;
-  content: '';
-  position: absolute;
-  left: 0;
-  background-repeat: no-repeat;
-}
-
-.manual-two::before {
-  height: 114px;
-  top: 0;
-  background-image: url(../img/top-decor-line.png);
-}
-
-.manual-two::after {
-  height: 86px;
-  bottom: 0;
-  background-image: url(../img/bottom-decor-line.png);
+  background-color: #f7f7f7;
+  .h3 {
+    padding-top: 27px;
+    margin-bottom: 22px;
+  }
 }
 
 .manual-two .manual-text {
@@ -83,7 +72,11 @@
 }
 
 .manual-three {
-  padding-top: 60px;
+  padding-top: 114px;
+  .h3 {
+    padding-top: 27px;
+    margin-bottom: 22px;
+  }
 }
 
 .manual-three .manual-media {

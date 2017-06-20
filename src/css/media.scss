@@ -250,6 +250,7 @@
   }
 
   .manual-text p {
+    margin-bottom: 12px;
     font-size: 18px;
   }
 
@@ -439,13 +440,13 @@
   }
 
   .manual-one {
-    padding-bottom: 40px;
+    padding-bottom: 58px;
   }
 
   .manual-one .manual-media {
     width: 511px;
-    margin-left: 32px;
-    margin-right: 46px;
+    margin-left: 28px;
+    margin-right: 44px;
   }
 
   .manual-one .manual-text {
@@ -1565,18 +1566,6 @@
 }
 
 @media (max-width: 414px) {
-  .manual-two::before {
-    height: 60px;
-    background-image: url(../img/blue-line-xs@2x.jpg);
-    background-size: contain;
-  }
-
-  .manual-two::after {
-    height: 60px;
-    background-image: url(../img/gray-line-xs@2x.jpg);
-    background-size: contain;
-  }
-
   .btn-blue {
     padding-left: 30px;
     padding-right: 30px;

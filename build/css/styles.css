@@ -62,11 +62,11 @@ a:focus, .as-link:focus {
 }
 
 b, strong {
-  font-weight: 700;
+  font-weight: normal;
   font-family: "Roboto-Bold", sans-serif;
 }
 
-h2, h3, h4 {
+h2, .h2, h3, .h3, h4 {
   margin-top: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -74,21 +74,22 @@ h2, h3, h4 {
   line-height: 1.2;
 }
 
-h1 {
+h1, .h1 {
   margin-top: 0;
   padding-top: 0;
+  font-size: 33px;
   font-weight: normal;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+h2, .h2 {
+  text-transform: uppercase;
   font-size: 33px;
   font-family: "Roboto-Bold", sans-serif;
 }
 
-h2 {
+h3, .h3 {
   font-size: 28px;
-  font-family: "Roboto-Medium", sans-serif;
-}
-
-h3 {
-  font-size: 24px;
   font-family: "Roboto-Medium", sans-serif;
 }
 
@@ -1063,15 +1064,6 @@ header .container {
   padding-top: 136px;
 }
 
-.header-home .insurance-type {
-  padding-left: 40px;
-}
-
-.header-about {
-  background: url(../img/bg-about-us.jpg) no-repeat 0 0;
-  background-size: cover;
-}
-
 .header-form {
   max-width: 945px;
   margin: 0 auto 110px;
@@ -1235,6 +1227,12 @@ header .container {
 
 .header-partners .sixth {
   max-width: 136px;
+}
+
+/* Old @todo */
+.header-about {
+  background: url(../img/bg-about-us.jpg) no-repeat 0 0;
+  background-size: cover;
 }
 
 .navbar {
@@ -1611,8 +1609,12 @@ header .container {
 }
 
 .manual {
-  padding-top: 23px;
+  padding-top: 87px;
   padding-bottom: 150px;
+}
+
+.manual .btn-blue {
+  margin-top: 22px;
 }
 
 .manual .container:after {
@@ -1621,13 +1623,9 @@ header .container {
   content: "";
 }
 
-.manual .title {
-  margin-bottom: 17px;
+.manual-title {
+  margin-bottom: 15px;
   text-align: center;
-}
-
-.manual .btn-blue {
-  margin-top: 22px;
 }
 
 .manual-pre-title {
@@ -1639,6 +1637,11 @@ header .container {
 
 .manual-one {
   padding-bottom: 85px;
+}
+
+.manual-one .h3 {
+  padding-top: 54px;
+  margin-bottom: 27px;
 }
 
 .manual-one .manual-media img {
@@ -1658,28 +1661,14 @@ header .container {
 }
 
 .manual-two {
-  padding: 122px 0 152px;
+  padding: 105px 0 98px;
   position: relative;
+  background-color: #f7f7f7;
 }
 
-.manual-two::before, .manual-two::after {
-  width: 100%;
-  content: '';
-  position: absolute;
-  left: 0;
-  background-repeat: no-repeat;
-}
-
-.manual-two::before {
-  height: 114px;
-  top: 0;
-  background-image: url(../img/top-decor-line.png);
-}
-
-.manual-two::after {
-  height: 86px;
-  bottom: 0;
-  background-image: url(../img/bottom-decor-line.png);
+.manual-two .h3 {
+  padding-top: 27px;
+  margin-bottom: 22px;
 }
 
 .manual-two .manual-text {
@@ -1696,7 +1685,12 @@ header .container {
 }
 
 .manual-three {
-  padding-top: 60px;
+  padding-top: 114px;
+}
+
+.manual-three .h3 {
+  padding-top: 27px;
+  margin-bottom: 22px;
 }
 
 .manual-three .manual-media {
