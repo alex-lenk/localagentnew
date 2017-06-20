@@ -171,11 +171,11 @@
   .single-post-top .pagination-prev, .single-post-top .pagination-next {
     margin-right: 30px;
   }
-  .about-advantages-title {
-    margin-bottom: 65px;
-  }
-  .about-advantages {
+  .worth-services {
     padding-top: 20px;
+  }
+  .worth-services-title {
+    margin-bottom: 80px;
   }
   .copyright {
     margin-top: -3px;
@@ -349,11 +349,12 @@
     height: 48px;
     margin-right: 20px;
   }
-  .about-advantages-bottom {
-    padding-top: 70px;
-  }
-  .about-advantages {
+  .worth-services {
     padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .worth-services-bottom {
+    padding-top: 70px;
   }
   footer {
     background-size: 100%;
@@ -761,7 +762,7 @@
   .header-search-right .phone-help {
     top: -1px;
   }
-  .about-advantages .col-sm-6:not(.about-advantages-last) {
+  .worth-services .col-sm-6:not(.worth-services-last) {
     margin-bottom: 45px;
   }
   .checkbox-custom-view a, .checkbox-custom-view span {
@@ -1384,11 +1385,11 @@
   .page .header-about {
     height: 320px;
   }
-  .about-advantages-media {
+  .worth-services-media {
     height: auto;
     margin-bottom: 30px;
   }
-  .about-advantages-media img {
+  .worth-services-media img {
     height: auto;
   }
   .header-home {
@@ -1773,10 +1774,10 @@
   .insurance-agent-desc {
     padding: 15px 15px 20px 20px;
   }
-  .about-advantages-last {
+  .worth-services-last {
     padding-top: 45px;
   }
-  .about-advantages .col-sm-6 {
+  .worth-services .col-sm-6 {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -1849,11 +1850,11 @@
   .manual-one .manual-media img {
     margin-right: 0;
   }
-  .about-advantages .col-sm-6 {
+  .worth-services .col-sm-6 {
     max-width: 85%;
     margin: 0 auto;
   }
-  .about-advantages img {
+  .worth-services img {
     max-height: none;
   }
   .page .header-form-insurance {
