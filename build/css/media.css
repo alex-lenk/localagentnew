@@ -211,15 +211,6 @@
     margin-bottom: 12px;
     font-size: 18px;
   }
-  .footer-nav {
-    margin-top: 37px;
-    padding-left: 65px;
-  }
-  .footer-nav li {
-    margin-bottom: 0;
-    display: inline-block;
-    vertical-align: top;
-  }
   .footer-subscribe-input {
     min-width: 295px;
   }
@@ -389,13 +380,6 @@
   .manual-three .manual-media {
     max-width: 445px;
     margin: 0 106px 0 32px;
-  }
-  .footer-nav {
-    margin-top: 43px;
-    padding-left: 50px;
-  }
-  .footer-nav li:not(:last-of-type) {
-    margin-right: 31px;
   }
   .copyright {
     padding-left: 42px;
@@ -908,19 +892,6 @@
   }
   footer .logo img {
     max-width: 225px;
-  }
-  .footer-nav {
-    max-width: 414px;
-    margin: 0 auto 35px;
-    float: none;
-    clear: both;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
   }
   .footer-subscribe {
     max-width: 280px;
@@ -1448,9 +1419,6 @@
   .page .header-faq {
     height: 320px;
   }
-  .footer-nav li {
-    font-size: 4.4vw;
-  }
   footer {
     background-size: cover;
   }
@@ -1561,35 +1529,6 @@
   .latest-articles-title {
     min-height: 71px;
   }
-  .footer-nav {
-    padding-right: 60px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .footer-nav li:not(:nth-child(1)):not(:nth-child(3)) {
-    -webkit-order: 3;
-    -ms-flex-order: 3;
-    -webkit-box-ordinal-group: 4;
-    order: 3;
-  }
-  .footer-nav li:nth-child(3) {
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-    -webkit-box-ordinal-group: 3;
-    order: 2;
-  }
-  .footer-nav li:first-of-type {
-    margin-right: 68px;
-    margin-bottom: 22px;
-  }
-  .footer-nav li:last-of-type {
-    margin-left: 74px;
-  }
   .contacts-info {
     padding-left: 45px;
   }
@@ -1673,10 +1612,6 @@
   .statistics .swiper-slide {
     max-width: 320px;
     padding: 0 15px;
-  }
-  .footer-nav {
-    margin-top: 4px;
-    padding-left: 55px;
   }
   .footer-subscribe-input {
     min-width: 219px;
@@ -1906,10 +1841,6 @@
   .manual-two {
     background: url(../img/top-decor-line@x2.jpg) no-repeat top center, url(../img/bottom-decor-line@x2.jpg) no-repeat bottom center;
   }
-  footer::after {
-    background-image: url(../img/bg-footer-decor@2x.png);
-    background-size: 200% auto;
-  }
   .page .latest-articles:after {
     background: url(../img/bg-footer-decor@2x.png) no-repeat top center;
   }
@@ -1930,12 +1861,6 @@
   }
   .statistics::before {
     background-size: cover;
-  }
-  footer::after {
-    background-size: cover;
-  }
-  .page footer::after {
-    background-size: 110% auto;
   }
 }
 

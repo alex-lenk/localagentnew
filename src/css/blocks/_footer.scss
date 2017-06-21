@@ -10,81 +10,21 @@ footer a {
   color: #ffffff;
 }
 
-footer::before, footer::after {
+footer::before {
   width: 100%;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-}
-
-footer::before {
   height: 100%;
-  background: url(../img/footer-bg.png) no-repeat top center;
+  background-color: rgba(#000, .6);
   background-size: cover;
   z-index: 5;
-}
-
-footer::after {
-  height: 99px;
-  background: url(../img/bg-footer-decor.png) no-repeat top center;
-  z-index: 6;
 }
 
 footer .container {
   position: relative;
   z-index: 7;
-}
-
-.footer-find-agent {
-  position: absolute;
-  top: 6px;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-}
-
-.footer-find-agent_link {
-  width: 280px;
-  text-align: left;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-}
-
-.footer-find-agent_link:hover {
-  background-color: #505b6a;
-  color: #ffffff;
-}
-
-.footer-find-agent_link .search {
-  vertical-align: middle;
-  position: absolute;
-  top: 17px;
-  right: 34px;
-}
-
-.footer-nav {
-  margin: 43px 0 0;
-  font-size: 0;
-  list-style: none;
-}
-
-.footer-nav li {
-  font-size: 17px;
-}
-
-.footer-nav li:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.footer-nav a {
-  border-bottom: 1px solid transparent;
-}
-
-.footer-nav a:hover {
-  border-bottom-color: #ffffff;
-  color: #ffffff;
 }
 
 .footer-subscribe {

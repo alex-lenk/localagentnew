@@ -1,0 +1,26 @@
+.find-agent {
+  width: 100%;
+  padding: 28px 0;
+  text-align: center;
+  background-color: #f2f9fb;
+}
+
+.find-agent-link {
+  width: 280px;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.find-agent-link:hover {
+  background-color: #505b6a;
+  color: #ffffff;
+}
+
+.find-agent-link .search {
+  vertical-align: middle;
+  position: absolute;
+  top: 17px;
+  right: 34px;
+}
