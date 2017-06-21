@@ -2099,15 +2099,11 @@ header .container {
 }
 
 footer {
-  padding-top: 157px;
-  padding-bottom: 70px;
+  padding-top: 82px;
+  padding-bottom: 65px;
   position: relative;
   color: #ffffff;
   background: url(../img/bg-footer-img.jpg) no-repeat center;
-}
-
-footer a {
-  color: #ffffff;
 }
 
 footer::before {
@@ -2125,11 +2121,30 @@ footer::before {
 footer .container {
   position: relative;
   z-index: 7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.copyright {
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 .footer-subscribe {
-  padding-top: 42px;
-  text-align: right;
   position: relative;
 }
 
@@ -2173,17 +2188,26 @@ footer .container {
   font-size: 16px;
 }
 
-.footer-bottom {
-  padding-top: 35px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
+.successfully-subscribed {
+  padding: 0 10px 15px;
+  border-bottom: 1px solid #fff;
+  margin-top: -15px;
+  font-size: 16px;
 }
 
-.copyright {
-  font-size: 15px;
-  margin-top: 5px;
+.successfully-subscribed .selected {
+  width: 24px;
+  height: 24px;
+  margin-bottom: -10px;
+  fill: #fff;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.successfully-subscribed-text {
+  margin-right: 130px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .social {
@@ -2195,7 +2219,7 @@ footer .container {
 }
 
 .social li:not(:last-of-type) {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .social a {
@@ -2220,20 +2244,20 @@ footer .container {
   align-items: center;
 }
 
-.social a:hover {
-  background-color: #505b6a;
-}
-
-.social a:hover .ok, .social a:hover .fb, .social a:hover .vk {
-  fill: #ffffff;
-}
-
-.social .ok, .social .fb, .social .vk {
+.social svg {
   width: 20px;
   height: 20px;
   fill: #c0b7b7;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.social a:hover {
+  background-color: #505b6a;
+}
+
+.social a:hover svg {
+  fill: #ffffff;
 }
 
 .content-page {

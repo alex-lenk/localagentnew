@@ -103,12 +103,6 @@
     max-width: 190px;
   }
 
-  .footer-bottom {
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
   .contacts-form {
     display: block;
   }
@@ -212,11 +206,6 @@
 
   .worth-services-title {
     margin-bottom: 80px;
-  }
-
-  .copyright {
-    margin-top: -3px;
-    margin-left: 22px;
   }
 
   .clock-info::before {
@@ -452,7 +441,7 @@
   }
 
   .copyright {
-    padding-left: 42px;
+    padding: 28px 0 0 42px;
   }
 
   .form-insurance-field {
@@ -488,12 +477,6 @@
   .result-list li:first-child {
     height: 100%;
     padding-top: 28px;
-  }
-
-  .footer-bottom {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
   }
 }
 
@@ -585,10 +568,6 @@
 
   .footer-subscribe {
     padding-top: 37px;
-  }
-
-  .footer-bottom {
-    padding-top: 12px;
   }
 
   .header-form-insurance .header-title {
@@ -1069,14 +1048,6 @@
   .footer-subscribe-input {
     padding-left: 8px;
     width: 100%;
-  }
-
-  .footer-bottom {
-    padding-top: 44px;
-    text-align: center;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
   }
 
   .copyright {
@@ -1906,12 +1877,6 @@
   .footer-subscribe-input {
     min-width: 219px;
     padding-left: 5px;
-  }
-
-  .footer-bottom {
-    padding-top: 0;
-    margin-top: -8px;
-    padding-right: 18px;
   }
 
   .social a {
