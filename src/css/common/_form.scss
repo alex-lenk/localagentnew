@@ -71,7 +71,7 @@
   border: 1px solid #e5e5e5;
   font-size: 16px;
   display: block;
-  border-radius: 32px;
+  border-radius: 3px;
   background-color: #ffffff;
   color: #505b6a;
   transition: all .3s ease;
@@ -124,12 +124,15 @@ textarea.form-control {
 
 .required-field .form-control {
   padding-left: 50px;
+  z-index: 5;
+  position: relative;
+  background-color: transparent;
 }
 
 .required-field:before {
   content: '*';
   position: absolute;
-  top: 17px;
+  top: 13px;
   left: 31px;
   color: #df4a4a;
   font-size: 23px;
@@ -140,25 +143,32 @@ textarea.form-control {
   left: 46px;
 }
 
+.form-group-textarea {
+  float: none;
+  clear: both;
+}
+
 .error-field .form-control {
-  background-color: #ffe8e8;
-  border-color: #ff9191;
+  border-color: #e94848;
 }
 
-.error-field .form-control::-webkit-input-placeholder {
-  color: #505b6a;
+.error-field-text {
+  display: inline-block;
+  font-size: 16px;
+  color: #e94848;
+  padding: 13px 0 0 46px;
 }
 
-.error-field .form-control::-moz-placeholder {
-  color: #505b6a;
-}
-
-.error-field .form-control:-moz-placeholder {
-  color: #505b6a;
-}
-
-.error-field .form-control:-ms-input-placeholder {
-  color: #505b6a;
+.error-field::after {
+  content: '';
+  background: url(../img/close.svg) no-repeat 5px 5px;
+  background-size: 200%;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 17px;
+  right: 41px;
+  z-index: 2;
 }
 
 .field-filled .selected {
@@ -175,6 +185,22 @@ textarea.form-control {
   visibility: hidden;
 }
 
+.field-filled::after {
+  content: '';
+  background: url(../img/selected.svg) no-repeat 5px 5px;
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 17px;
+  right: 41px;
+  z-index: 2;
+}
+
 .field-filled .form-control {
+  padding-left: 30px;
   border-color: #c8d3a1;
+  z-index: 5;
+  position: relative;
+  background-color: transparent;
 }

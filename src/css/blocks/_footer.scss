@@ -18,18 +18,10 @@ footer {
   .container {
     position: relative;
     z-index: 7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   a {
     color: #ffffff;
   }
-}
-
-.copyright {
-  font-size: 15px;
-  margin-top: 5px;
 }
 
 .footer-subscribe {
@@ -98,6 +90,7 @@ footer {
 }
 
 .social {
+  margin-bottom: -5px;
   font-size: 0;
 }
 
@@ -139,4 +132,9 @@ footer {
 
 .social a:hover svg {
   fill: #ffffff;
+}
+
+.copyright {
+  padding: 33px 0 0 42px;
+  font-size: 15px;
 }

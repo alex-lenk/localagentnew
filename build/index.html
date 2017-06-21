@@ -55,7 +55,8 @@
 
             <div class="header-center col-xs-12">
     <h1 class="header-title">Хотите застраховать автомобиль без лишних <br> переплат?</h1>
-    <p class="header-intro-text">Заполните короткую форму и получите лучшие предложения от локальных страховых агентов с <br>
+    <p class="header-intro-text">Заполните короткую форму и получите лучшие предложения от локальных страховых агентов с
+        <br>
         точным расчетом стоимости полиса.</p>
 
     <form action="#" class="header-form hidden-xs">
@@ -78,14 +79,16 @@
         </div>
     </form>
 
-    <ul class="header-partners list-unstyled">
-        <li class="first"><a href="#"><img src="img/partners-header/ingosstrah@2x.png" alt=""></a></li>
-        <li class="second"><a href="#"><img src="img/partners-header/peco@2x.png" alt=""></a></li>
-        <li class="third"><a href="#"><img src="img/partners-header/zetta@2x.png" alt=""></a></li>
-        <li class="forth"><a href="#"><img src="img/partners-header/renessans@2x.png" alt=""></a></li>
-        <li class="fifth"><a href="#"><img src="img/partners-header/bck@2x.png" alt=""></a></li>
-        <li class="sixth"><a href="#"><img src="img/partners-header/gaide@2x.png" alt=""></a></li>
-    </ul>
+    <div class="header-partners partners-carousel hidden-xs">
+        <div class="swiper-wrapper">
+            <div class="first swiper-slide"><a href="#"><img src="img/partners-header/ingosstrah@2x.png" alt=""></a></div>
+            <div class="second swiper-slide"><a href="#"><img src="img/partners-header/peco@2x.png" alt=""></a></div>
+            <div class="third swiper-slide"><a href="#"><img src="img/partners-header/zetta@2x.png" alt=""></a></div>
+            <div class="forth swiper-slide"><a href="#"><img src="img/partners-header/renessans@2x.png" alt=""></a></div>
+            <div class="fifth swiper-slide"><a href="#"><img src="img/partners-header/bck@2x.png" alt=""></a></div>
+            <div class="sixth swiper-slide"><a href="#"><img src="img/partners-header/gaide@2x.png" alt=""></a></div>
+        </div>
+    </div>
 
     <a href="#" class="btn btn-green visible-xs-inline-block">Получить предложения</a>
 </div>
@@ -289,9 +292,13 @@
 <footer>
     <div class="container">
         <div class="logo">
-            <a href="index.html" class="logo-wrap"><img src="img/logo.png" alt="LocalAgent - Умное страхование"></a>
-
-            <div class="copyright">© 2016-2017. Local Agent.</div>
+            <a href="index.html" class="logo-wrap">
+                <picture>
+                    <source srcset="img/logo@2x.png"
+                            media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
+                    <img src="img/logo.png" alt="LocalAgent - Умное страхование">
+                </picture>
+            </a>
         </div>
 
         <form action="#" class="footer-subscribe">
@@ -317,23 +324,25 @@
         </form>
 
         <ul class="social list-unstyled">
-                <li><a href="#" target="_blank">
-                    <svg class="ok">
-                        <use xlink:href="img/sprite.svg#ok"></use>
-                    </svg>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <svg class="fb">
-                        <use xlink:href="img/sprite.svg#fb"></use>
-                    </svg>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <svg class="vk">
-                        <use xlink:href="img/sprite.svg#vk"></use>
-                    </svg>
-                </a></li>
-            </ul>
+            <li><a href="#" target="_blank">
+                <svg class="ok">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+            </a></li>
+            <li><a href="#" target="_blank">
+                <svg class="fb">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+            </a></li>
+            <li><a href="#" target="_blank">
+                <svg class="vk">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+            </a></li>
+        </ul>
     </div>
+
+    <div class="copyright container">© 2016-2017. Local Agent.</div>
 </footer>
 
 <script src="js/jquery.js"></script>

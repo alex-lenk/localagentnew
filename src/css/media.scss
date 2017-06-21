@@ -143,7 +143,7 @@
   }
 
   .page header {
-    padding-bottom: 105px;
+    padding-bottom: 92px;
   }
 
   .search-wrapper {
@@ -222,6 +222,12 @@
 
   .pagination .pagination-prev a, .pagination .pagination-next a {
     text-decoration: underline;
+  }
+
+  footer .container:not(.copyright) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
@@ -440,10 +446,6 @@
     margin: 0 106px 0 32px;
   }
 
-  .copyright {
-    padding: 28px 0 0 42px;
-  }
-
   .form-insurance-field {
     padding-left: 7%;
   }
@@ -501,10 +503,6 @@
 
   .navbar {
     padding-top: 24px;
-  }
-
-  .header-home .header-center {
-    padding-top: 180px;
   }
 
   .manual {
@@ -591,6 +589,22 @@
 }
 
 @media (max-width: 992px) {
+  .header-home .header-center {
+    padding-top: 70px;
+  }
+
+  .header-form {
+    margin-bottom: 70px;
+  }
+
+  .header-intro-text br {
+    display: none;
+  }
+
+  .manual-one .manual-media img {
+    margin-left: -25px;
+  }
+
   .manual-pre-title {
     margin-bottom: 112px;
   }
@@ -1021,8 +1035,9 @@
 
   footer {
     background-size: cover;
-    padding-top: 130px;
+    padding-top: 53px;
     padding-bottom: 45px;
+    text-align: center;
   }
 
   footer .logo {
@@ -1050,11 +1065,16 @@
     width: 100%;
   }
 
+  .social {
+    margin: 45px 0 0;
+  }
+
   .copyright {
+    margin-top: 5px;
+    font-size: 15px;
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
-    margin-top: 38px;
   }
 
   .insurance-agent-face .user {
@@ -1783,10 +1803,6 @@
     min-width: 420px;
   }
 
-  footer {
-    padding-top: 168px;
-  }
-
   .post-text {
     font-size: 16px;
   }
@@ -1803,7 +1819,7 @@
   }
 
   .header-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .single-post-title {

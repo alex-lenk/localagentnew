@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     var swiper = new Swiper('.partners-carousel', {
         grabCursor: true,
-        slidesPerView: 5,
+        slidesPerView: 6,
         breakpoints: {
             1199: {
                 slidesPerView: 4

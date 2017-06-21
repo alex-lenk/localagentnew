@@ -151,33 +151,33 @@ header .container {
 }
 
 .header-partners {
-  display: flex;
+/*  display: flex;
   justify-content: space-between;
-  align-items: center;
-  li {
+  align-items: center;*/
+  .swiper-slide {
     opacity: .55;
     transition: all 0.3s ease;
-    flex-basis: calc(100% / 6);
+    //flex-basis: calc(100% / 6);
     &:hover {
       opacity: 1;
     }
   }
-  .first {
+ .first img {
     max-width: 165px;
   }
-  .second {
+  .second img {
     max-width: 161px;
   }
-  .third {
+  .third img {
     max-width: (274px / 2);
   }
-  .forth {
+  .forth img {
     max-width: (306px / 2);
   }
-  .fifth {
+  .fifth img {
     max-width: (358px / 2);
   }
-  .sixth {
+  .sixth img {
     max-width: (272px / 2);
   }
 }
