@@ -940,7 +940,7 @@
     display: none;
   }
   .contacts-form-toggle {
-    padding: 26px 0 23px 38px;
+    padding: 26px 0 23px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     color: #ffffff;
@@ -965,12 +965,14 @@
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .contacts-form-toggle .next {
-    width: 17px;
-    height: 12px;
+  .contacts-form-toggle:not(.contacts-form-toggle-open) .next {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+  }
+  .contacts-form-toggle .next {
+    width: 17px;
+    height: 12px;
     fill: #ffffff;
     position: absolute;
     top: 27px;
@@ -1427,9 +1429,6 @@
   }
   .contacts-requisites-text {
     padding-left: 0;
-  }
-  .contacts-form-toggle {
-    padding-left: 8%;
   }
   .contacts-form-toggle .next {
     right: 20px;
