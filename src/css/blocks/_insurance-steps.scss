@@ -1,81 +1,107 @@
 .insurance-steps {
-  counter-reset: item;
+  margin-bottom: 50px;
+  overflow: hidden;
+  border-bottom: 1px solid #e3e3e3;
+  svg {
+    width: 21px;
+    height: 21px;
+    margin: 10px 0 0 10px;
+    fill: #fff;
+  }
+}
+
+.insurance-steps-wrap {
+  margin-bottom: 0;
   list-style: none;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.insurance-steps li {
-  color: #a7c343;
+.insurance-steps-item {
+  height: 80px;
+  position: relative;
+  font-size: 16px;
   text-transform: uppercase;
-  position: relative;
-  z-index: 12;
-  font-family: "Roboto-Bold", sans-serif;
-}
-
-.insurance-steps .current {
-  color: #4f8ad9;
-}
-
-.insurance-steps .current ~ li {
   color: #c0b7b7;
+  max-width: 31%;
+  flex-basis: 31%;
+  display: flex;
+  align-items: center;
+  @include RobotoBold;
+  .auto {
+    width: 21px;
+    height: 21px;
+    margin: 10px 0 0 10px;
+  }
+
+  .arrow-right {
+    fill: #c0b7b7;
+    position: absolute;
+    right: -30px;
+    top: 21px;
+    width: 19px;
+    height: 19px;
+  }
+
+  &:first-of-type {
+    padding-left: 35px;
+    background-color: #4f8ad9;
+    &::before {
+      width: 160rem;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      background-color: inherit;
+      content: '';
+    }
+  }
+
+  &:not(:last-of-type)::after {
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    top: 50%;
+    right: -7px;
+    border: 2px solid #fff;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #a7c343;
+    content: '';
+  }
+
+  &:not(.insurance-steps-current) .insurance-steps-icon {
+    background-color: #c0b7b7;
+  }
+
+  &:not(:first-of-type):not(:last-of-type) {
+    justify-content: center;
+    &::after {
+      right: -35px;
+    }
+    .arrow-right {
+      right: -58px;
+    }
+  }
+
+  &:last-of-type {
+    padding-right: 53px;
+    justify-content: flex-end;
+  }
 }
 
-.insurance-steps .current ~ li .selected {
-  display: none;
+.insurance-steps-current {
+  color: #fff;
+  .insurance-steps-icon {
+    background-color: #a7c343;
+  }
 }
 
-.insurance-steps .current ~ li svg:not(.selected):not(.arrow-right) {
-  display: block;
-}
-
-.insurance-steps .current .selected {
-  display: none;
-}
-
-.insurance-steps .current svg:not(.selected) {
-  display: block;
-}
-
-.insurance-steps svg {
-  fill: #f2f9fb;
-  width: 24px;
-  height: 26px;
-  position: absolute;
-  z-index: 5;
-}
-
-.insurance-steps svg:not(.selected) {
-  display: none;
-}
-
-.insurance-steps .driver, .insurance-steps .list {
-  width: 23px;
-  height: 23px;
-}
-
-.insurance-steps .arrow-right {
-  margin-left: 20px;
-}
-
-.insurance-steps .arrow-right svg {
-  width: 20px;
-  height: 15px;
-  fill: #c0b7b7;
-}
-
-.insurance-steps .selected {
-  fill: #ffffff;
-  z-index: 20;
-  position: absolute;
-}
-
-.hint-box-text {
-  width: 319px;
-  right: -100%;
-  left: auto;
-}
-
-.hint-box-text::before {
-  left: auto;
-  right: 31px;
+.insurance-steps-icon {
+  background-color: #a7c343;
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+  border-radius: 50%;
 }

@@ -151,13 +151,9 @@ header .container {
 }
 
 .header-partners {
-/*  display: flex;
-  justify-content: space-between;
-  align-items: center;*/
   .swiper-slide {
     opacity: .55;
     transition: all 0.3s ease;
-    //flex-basis: calc(100% / 6);
     &:hover {
       opacity: 1;
     }

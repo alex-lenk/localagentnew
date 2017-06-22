@@ -1203,12 +1203,6 @@ header .container {
   border: 2px solid transparent;
 }
 
-.header-partners {
-  /*  display: flex;
-  justify-content: space-between;
-  align-items: center;*/
-}
-
 .header-partners .swiper-slide {
   opacity: .55;
   -webkit-transition: all 0.3s ease;
@@ -3167,15 +3161,37 @@ li.search-show-map a:hover {
   box-shadow: 0 0 0 7px rgba(79, 138, 217, 0.4), 0 0 0 17px rgba(79, 138, 217, 0.12), 0 0 0 27px rgba(79, 138, 217, 0.07);
 }
 
-.header-form-insurance {
-  height: 365px;
+.header-insurance {
+  padding-top: 22px;
+  padding-bottom: 16px;
+  background-color: #1b4d6e;
 }
 
-.header-form-insurance .container {
+.header-insurance .logo {
+  max-width: 255px;
+}
+
+.header-insurance .logo img {
+  max-width: 100%;
+}
+
+.header-search-right {
+  width: 100%;
+  padding: 19px 34px 16px 10px;
+  max-width: 280px;
+  margin-top: 4px;
+  margin-right: 20px;
+  text-align: right;
+  position: relative;
+  z-index: 9;
+  float: right;
+}
+
+.header-insurance .container {
   position: relative;
 }
 
-.header-form-insurance .header-title {
+.header-insurance .header-title {
   margin: 56px 0 0;
 }
 
@@ -3667,77 +3683,6 @@ li.search-show-map a:hover {
   bottom: -10px;
 }
 
-.insurance-steps {
-  counter-reset: item;
-  list-style: none;
-  position: relative;
-}
-
-.insurance-steps li {
-  color: #a7c343;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 12;
-  font-family: "Roboto-Bold", sans-serif;
-}
-
-.insurance-steps .current {
-  color: #4f8ad9;
-}
-
-.insurance-steps .current ~ li {
-  color: #c0b7b7;
-}
-
-.insurance-steps .current ~ li .selected {
-  display: none;
-}
-
-.insurance-steps .current ~ li svg:not(.selected):not(.arrow-right) {
-  display: block;
-}
-
-.insurance-steps .current .selected {
-  display: none;
-}
-
-.insurance-steps .current svg:not(.selected) {
-  display: block;
-}
-
-.insurance-steps svg {
-  fill: #f2f9fb;
-  width: 24px;
-  height: 26px;
-  position: absolute;
-  z-index: 5;
-}
-
-.insurance-steps svg:not(.selected) {
-  display: none;
-}
-
-.insurance-steps .driver, .insurance-steps .list {
-  width: 23px;
-  height: 23px;
-}
-
-.insurance-steps .arrow-right {
-  margin-left: 20px;
-}
-
-.insurance-steps .arrow-right svg {
-  width: 20px;
-  height: 15px;
-  fill: #c0b7b7;
-}
-
-.insurance-steps .selected {
-  fill: #ffffff;
-  z-index: 20;
-  position: absolute;
-}
-
 .hint-box-text {
   width: 319px;
   right: -100%;
@@ -3747,6 +3692,141 @@ li.search-show-map a:hover {
 .hint-box-text::before {
   left: auto;
   right: 31px;
+}
+
+.insurance-steps {
+  margin-bottom: 50px;
+  overflow: hidden;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.insurance-steps svg {
+  width: 21px;
+  height: 21px;
+  margin: 10px 0 0 10px;
+  fill: #fff;
+}
+
+.insurance-steps-wrap {
+  margin-bottom: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.insurance-steps-item {
+  height: 80px;
+  position: relative;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #c0b7b7;
+  max-width: 31%;
+  -webkit-flex-basis: 31%;
+  -ms-flex-preferred-size: 31%;
+  flex-basis: 31%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.insurance-steps-item .auto {
+  width: 21px;
+  height: 21px;
+  margin: 10px 0 0 10px;
+}
+
+.insurance-steps-item .arrow-right {
+  fill: #c0b7b7;
+  position: absolute;
+  right: -30px;
+  top: 21px;
+  width: 19px;
+  height: 19px;
+}
+
+.insurance-steps-item:first-of-type {
+  padding-left: 35px;
+  background-color: #4f8ad9;
+}
+
+.insurance-steps-item:first-of-type::before {
+  width: 160rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  background-color: inherit;
+  content: '';
+}
+
+.insurance-steps-item:not(:last-of-type)::after {
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  top: 50%;
+  right: -7px;
+  border: 2px solid #fff;
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #a7c343;
+  content: '';
+}
+
+.insurance-steps-item:not(.insurance-steps-current) .insurance-steps-icon {
+  background-color: #c0b7b7;
+}
+
+.insurance-steps-item:not(:first-of-type):not(:last-of-type) {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.insurance-steps-item:not(:first-of-type):not(:last-of-type)::after {
+  right: -35px;
+}
+
+.insurance-steps-item:not(:first-of-type):not(:last-of-type) .arrow-right {
+  right: -58px;
+}
+
+.insurance-steps-item:last-of-type {
+  padding-right: 53px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.insurance-steps-current {
+  color: #fff;
+}
+
+.insurance-steps-current .insurance-steps-icon {
+  background-color: #a7c343;
+}
+
+.insurance-steps-icon {
+  background-color: #a7c343;
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .worth-services {

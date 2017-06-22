@@ -3,63 +3,69 @@
 <head>
     <!-- include "temp/head.html" -->
 </head>
-<body class="page">
-<header class="header-form-insurance">
+<body>
+<header class="header-insurance">
     <div class="container">
         <div class="row">
             <!-- include "temp/logo.html" -->
-            <h1 class="header-title col-md-12">Автострахование для вашего BMW</h1>
-            <div class="clock-info">
-                <div class="clock-info-text">Это займет всего 2 минуты</div>
-            </div>
+
+            <button class="header-search-right btn btn-white">
+                <svg class="phone-help">
+                    <use xlink:href="img/sprite.svg#phone-help"></use>
+                </svg>
+                <span class="hidden-xs">Возникли проблемы?</span>
+            </button>
         </div>
     </div>
 </header>
 
+<div class="insurance-steps">
+    <ol class="insurance-steps-wrap container">
+        <li class="insurance-steps-item insurance-steps-current">
+            <div class="insurance-steps-icon">
+                <svg class="auto">
+                    <use xlink:href="img/sprite.svg#auto"></use>
+                </svg>
+            </div>
+
+            <!--<object class="selected" type="image/svg+xml" data="img/selected.svg"></object>-->
+
+            <svg class="arrow-right">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+
+            <span class="insurance-steps-text">1. Автомобиль</span>
+        </li>
+
+        <li class="insurance-steps-item">
+            <div class="insurance-steps-icon">
+                <svg class="driver">
+                    <use xlink:href="img/sprite.svg#driver"></use>
+                </svg>
+            </div>
+
+            <svg class="arrow-right">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+
+            <span class="insurance-steps-text">2. Водитель</span>
+        </li>
+
+        <li class="insurance-steps-item">
+            <div class="insurance-steps-icon">
+                <svg class="list">
+                    <use xlink:href="img/sprite.svg#list"></use>
+                </svg>
+            </div>
+
+            <span class="insurance-steps-text">3. Результат</span>
+        </li>
+    </ol>
+</div>
+
+
 <section class="form-insurance container">
     <div class="row">
-
-        <aside class="insurance-steps-wrap col-md-3 col-xs-12">
-            <ol class="insurance-steps-first insurance-steps">
-                <li class="current">
-                    <svg class="auto">
-                        <use xlink:href="img/sprite.svg#auto"></use>
-                    </svg>
-
-                    <object class="selected" type="image/svg+xml" data="img/selected.svg"></object>
-
-                    <div class="arrow-right">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </div>
-
-                    <span class="insurance-steps-text"><span class="insurance-steps-number">1.</span> Автомобиль</span>
-                </li>
-                <li>
-                    <svg class="driver">
-                        <use xlink:href="img/sprite.svg#driver"></use>
-                    </svg>
-
-                    <object class="selected" type="image/svg+xml" data="img/selected.svg"></object>
-
-                    <div class="arrow-right">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </div>
-
-                    <span class="insurance-steps-text"><span class="insurance-steps-number">2.</span> Водитель</span>
-                </li>
-                <li>
-                    <svg class="list">
-                        <use xlink:href="img/sprite.svg#list"></use>
-                    </svg>
-                    <span class="insurance-steps-text"><span class="insurance-steps-number">3.</span> Результат</span>
-
-                </li>
-            </ol>
-        </aside>
 
         <form action="#" class="form-insurance-field col-md-9">
             <ul class="insurance-type">
