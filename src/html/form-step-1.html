@@ -4,75 +4,89 @@
     <!-- include "temp/head.html" -->
 </head>
 <body>
-<header class="header-insurance">
-    <div class="container">
-        <div class="row">
-            <!-- include "temp/logo.html" -->
+<div class="wrapper">
+    <header class="header-insurance">
+        <div class="container">
+            <div class="row">
+                <!-- include "temp/logo.html" -->
 
-            <button class="header-search-right btn btn-white">
-                <svg class="phone-help">
-                    <use xlink:href="img/sprite.svg#phone-help"></use>
-                </svg>
-                <span class="hidden-xs">Возникли проблемы?</span>
-            </button>
+                <button class="header-search-right btn btn-white">
+                    <svg class="phone-help">
+                        <use xlink:href="img/sprite.svg#phone-help"></use>
+                    </svg>
+                    <span class="hidden-xs">Возникли проблемы?</span>
+                </button>
+            </div>
         </div>
+    </header>
+
+    <div class="insurance-steps">
+        <ol class="insurance-steps-wrap container">
+            <li class="insurance-steps-item insurance-steps-current">
+                <div class="insurance-steps-icon">
+                    <svg class="auto">
+                        <use xlink:href="img/sprite.svg#auto"></use>
+                    </svg>
+                </div>
+
+                <!--<object class="selected" type="image/svg+xml" data="img/selected.svg"></object>-->
+
+                <svg class="arrow-right">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+
+                <span class="insurance-steps-text">1. Автомобиль</span>
+            </li>
+
+            <li class="insurance-steps-item">
+                <div class="insurance-steps-icon">
+                    <svg class="driver">
+                        <use xlink:href="img/sprite.svg#driver"></use>
+                    </svg>
+                </div>
+
+                <svg class="arrow-right">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+
+                <span class="insurance-steps-text">2. Водитель</span>
+            </li>
+
+            <li class="insurance-steps-item">
+                <div class="insurance-steps-icon">
+                    <svg class="list">
+                        <use xlink:href="img/sprite.svg#list"></use>
+                    </svg>
+                </div>
+
+                <span class="insurance-steps-text">3. Результат</span>
+            </li>
+        </ol>
     </div>
-</header>
 
-<div class="insurance-steps">
-    <ol class="insurance-steps-wrap container">
-        <li class="insurance-steps-item insurance-steps-current">
-            <div class="insurance-steps-icon">
-                <svg class="auto">
-                    <use xlink:href="img/sprite.svg#auto"></use>
-                </svg>
+    <div class="insurance-info container bg-full">
+        Что бы помочь нашим агентам найти для вас лучшие предложения, расскажите о себе и вашем
+        <br>автомобиле.
+    </div>
+
+    <section class="form-insurance container">
+        <form action="#" class="form-insurance-wrap">
+            <div class="form-insurance-top">
+                <ul class="insurance-form-type">
+                    <li class="insurance-form-type_label">Тип страховки:</li>
+                    <li class="insurance-form-type_item insurance-form-type_current">КАСКО</li>
+                    <li class="insurance-form-type_item">Осаго</li>
+                </ul>
+
+                <div class="insurance-form-discount"><span class="text-blue">Скидка 3%</span> на полис Каско</div>
             </div>
 
-            <!--<object class="selected" type="image/svg+xml" data="img/selected.svg"></object>-->
-
-            <svg class="arrow-right">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-            </svg>
-
-            <span class="insurance-steps-text">1. Автомобиль</span>
-        </li>
-
-        <li class="insurance-steps-item">
-            <div class="insurance-steps-icon">
-                <svg class="driver">
-                    <use xlink:href="img/sprite.svg#driver"></use>
-                </svg>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 20%;">
+                </div>
+                <div class="progress-text">+0.5% за заполнения поля “Дата рождения”</div>
             </div>
-
-            <svg class="arrow-right">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-            </svg>
-
-            <span class="insurance-steps-text">2. Водитель</span>
-        </li>
-
-        <li class="insurance-steps-item">
-            <div class="insurance-steps-icon">
-                <svg class="list">
-                    <use xlink:href="img/sprite.svg#list"></use>
-                </svg>
-            </div>
-
-            <span class="insurance-steps-text">3. Результат</span>
-        </li>
-    </ol>
-</div>
-
-
-<section class="form-insurance container">
-    <div class="row">
-
-        <form action="#" class="form-insurance-field col-md-9">
-            <ul class="insurance-type">
-                <li class="insurance-type-label">Тип страховки:</li>
-                <li class="current insurance-type-point">КАСКО</li>
-                <li class="insurance-type-point">Осаго</li>
-            </ul>
 
             <div class="form-group required-field">
                 <input type="text" class="form-control hide-placeholder select-open" placeholder="Выберите Марку">
@@ -80,606 +94,34 @@
                 <svg class="arrow">
                     <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
-
-                <div class="make-choice">
-                    <ul class="make-choice-list list-unstyled">
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                    </ul>
-                </div>
             </div>
 
             <div class="form-half">
-                <div class="form-group required-field">
-                    <input type="text" class="form-control hide-placeholder select-open" placeholder="Модель">
+                <div class="form-half-col">
+                    <div class="form-group required-field">
+                        <input type="text" class="form-control hide-placeholder select-open" placeholder="Тип кузова">
 
-                    <svg class="arrow">
-                        <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
-
-                    <div class="make-choice">
-                        <ul class="make-choice-list list-unstyled">
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="form-group required-field">
-                    <input type="text" class="form-control hide-placeholder" placeholder="Год выпуска">
-                </div>
-            </div>
-
-            <div class="form-group required-field">
-                <input type="text" class="form-control hide-placeholder select-open" placeholder="тип">
-
-                <svg class="arrow">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-
-                <div class="make-choice">
-                    <ul class="make-choice-list list-unstyled">
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="form-half">
-                <div class="form-group required-field">
-                    <input type="text" class="form-control hide-placeholder select-open" placeholder="Пробег в км.">
-
-                    <svg class="arrow">
-                        <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
-
-                    <div class="make-choice">
-                        <ul class="make-choice-list list-unstyled">
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="form-group required-field">
-                    <input type="text" class="form-control hide-placeholder" placeholder="Оценочная стоимость">
-                    <span class="hint-box" data-toggle="tooltip" data-placement="top" title="Медицинские и меддико
-                    страховые расхды, возникшие вследствие занятий застрахованого спортом на
-                        профессиональном уровне, включая соревнования, тренировки и сборы."></span>
-
-                </div>
-            </div>
-
-            <fieldset class="radio-block">
-                <h4>Автомобиль взят в кредит?</h4>
-
-                <div class="form-group">
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio" class="radio-custom" checked>
-                        <span class="radio-custom-yes">Да</span>
-                    </label>
-
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio" class="radio-custom">
-                        <span class="radio-custom-no">Нет</span>
-                    </label>
-                </div>
-
-                <h4>
-                    Застраховано на текущий момент?
-                    <span class="hint-box" data-toggle="tooltip" data-placement="top"
-                          title="Медицинские и меддико страховые расхды, возникшие вследствие занятий застрахованого спортом на профессиональном уровне, включая соревнования, тренировки и сборы."></span>
-                </h4>
-
-                <div class="form-group">
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio2" class="radio-custom">
-                        <span class="radio-custom-yes">Да</span>
-                    </label>
-
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio2" class="radio-custom">
-                        <span class="radio-custom-no">Нет</span>
-                    </label>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <div class="form-group">
-                    <input type="text" class="form-control hide-placeholder select-open"
-                           placeholder="Текущая страховая компания">
-
-                    <svg class="arrow">
-                        <use xlink:href="img/sprite.svg#arrow"></use>
-                    </svg>
-
-                    <div class="make-choice">
-                        <ul class="make-choice-list list-unstyled">
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Hundai
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                            <li>
-                                <svg class="arrow">
-                                    <use xlink:href="img/sprite.svg#list-arrow"></use>
-                                </svg>
-                                Mers
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="form-group form-data">
-                    <div class="form-data-wrap">
-                        <input type="text" class="form-control hide-placeholder datepicker-here"
-                               data-position="bottom right" placeholder="Дата окончания текущего полиса">
-
-                        <svg class="data">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#data"></use>
+                        <svg class="arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
                         </svg>
                     </div>
-
-                    <div class="hint-block">
-                        <div class="hint-block-icons">
-                            <svg class="ex-point">
-                                <use xlink:href="img/sprite.svg#ex-point"></use>
-                            </svg>
-                        </div>
-                        <div class="hint-block-text">
-                            Заполнив данное поле вы имете возможность получить существенные скидки при продлении вашего
-                            страхового полиса
-                        </div>
+                </div>
+                <div class="form-half-col">
+                    <div class="form-group required-field">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Регион использования">
                     </div>
                 </div>
-            </fieldset>
-
-            <div class="form-group">
-                <input type="text" class="form-control hide-placeholder select-open"
-                       placeholder="Противоугонное средство">
-
-                <svg class="arrow">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-
-                <div class="make-choice">
-                    <ul class="make-choice-list list-unstyled">
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Hundai
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                        <li>
-                            <svg class="arrow">
-                                <use xlink:href="img/sprite.svg#list-arrow"></use>
-                            </svg>
-                            Mers
-                        </li>
-                    </ul>
-                </div>
             </div>
 
-            <h4>
-                Вас интересует франшиза?
-                <span class="hint-box" data-toggle="tooltip" data-placement="top"
-                      title="Медицинские и меддико страховые расхды, возникшие вследствие занятий застрахованого спортом на профессиональном уровне, включая соревнования, тренировки и сборы."></span>
-            </h4>
 
-            <div class="form-group">
-                <label class="radio-custom-label">
-                    <input type="radio" name="radio3" class="radio-custom">
-                    <span class="radio-custom-yes">Да</span>
+            <div class="form-insurance-bottom">
+                <label class="checkbox-custom-label">
+                    <input type="checkbox" name="" class="checkbox-custom">
+                    <span class="checkbox-custom-view">Я принимаю</span>
                 </label>
+                <span class="as-link" data-toggle="modal"
+                      data-target="#terms-information">условия передачи информации</span>
 
-                <label class="radio-custom-label">
-                    <input type="radio" name="radio3" class="radio-custom">
-                    <span class="radio-custom-no">Нет</span>
-                </label>
-            </div>
-
-            <div class="form-insurance-bottom text-right">
                 <button class="btn btn-blue">
                     Продолжить
                     <svg class="arrow-right">
@@ -687,11 +129,628 @@
                     </svg>
                 </button>
             </div>
-        </form>
-    </div>
-</section>
 
-<!-- include "temp/footer.html" -->
+            <!--
+                    <div action="#" class="form-insurance-field col-md-9">
+
+                        <div class="form-half">
+                            <div class="form-group required-field">
+                                <input type="text" class="form-control hide-placeholder select-open" placeholder="Модель">
+
+                                <svg class="arrow">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+
+                                <div class="make-choice">
+                                    <ul class="make-choice-list list-unstyled">
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group required-field">
+                                <input type="text" class="form-control hide-placeholder" placeholder="Год выпуска">
+                            </div>
+                        </div>
+
+                        <div class="form-group required-field">
+                            <input type="text" class="form-control hide-placeholder select-open" placeholder="тип">
+
+                            <svg class="arrow">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+
+                            <div class="make-choice">
+                                <ul class="make-choice-list list-unstyled">
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-half">
+                            <div class="form-group required-field">
+                                <input type="text" class="form-control hide-placeholder select-open" placeholder="Пробег в км.">
+
+                                <svg class="arrow">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+
+                                <div class="make-choice">
+                                    <ul class="make-choice-list list-unstyled">
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group required-field">
+                                <input type="text" class="form-control hide-placeholder" placeholder="Оценочная стоимость">
+                                <span class="hint-box" data-toggle="tooltip" data-placement="top" title="Медицинские и меддико
+                                страховые расхды, возникшие вследствие занятий застрахованого спортом на
+                                    профессиональном уровне, включая соревнования, тренировки и сборы."></span>
+
+                            </div>
+                        </div>
+
+                        <fieldset class="radio-block">
+                            <h4>Автомобиль взят в кредит?</h4>
+
+                            <div class="form-group">
+                                <label class="radio-custom-label">
+                                    <input type="radio" name="radio" class="radio-custom" checked>
+                                    <span class="radio-custom-yes">Да</span>
+                                </label>
+
+                                <label class="radio-custom-label">
+                                    <input type="radio" name="radio" class="radio-custom">
+                                    <span class="radio-custom-no">Нет</span>
+                                </label>
+                            </div>
+
+                            <h4>
+                                Застраховано на текущий момент?
+                                <span class="hint-box" data-toggle="tooltip" data-placement="top"
+                                      title="Медицинские и меддико страховые расхды, возникшие вследствие занятий застрахованого спортом на профессиональном уровне, включая соревнования, тренировки и сборы."></span>
+                            </h4>
+
+                            <div class="form-group">
+                                <label class="radio-custom-label">
+                                    <input type="radio" name="radio2" class="radio-custom">
+                                    <span class="radio-custom-yes">Да</span>
+                                </label>
+
+                                <label class="radio-custom-label">
+                                    <input type="radio" name="radio2" class="radio-custom">
+                                    <span class="radio-custom-no">Нет</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-group">
+                                <input type="text" class="form-control hide-placeholder select-open"
+                                       placeholder="Текущая страховая компания">
+
+                                <svg class="arrow">
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+
+                                <div class="make-choice">
+                                    <ul class="make-choice-list list-unstyled">
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Hundai
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                        <li>
+                                            <svg class="arrow">
+                                                <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                            </svg>
+                                            Mers
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-data">
+                                <div class="form-data-wrap">
+                                    <input type="text" class="form-control hide-placeholder datepicker-here"
+                                           data-position="bottom right" placeholder="Дата окончания текущего полиса">
+
+                                    <svg class="data">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#data"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="hint-block">
+                                    <div class="hint-block-icons">
+                                        <svg class="ex-point">
+                                            <use xlink:href="img/sprite.svg#ex-point"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="hint-block-text">
+                                        Заполнив данное поле вы имете возможность получить существенные скидки при продлении вашего
+                                        страхового полиса
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control hide-placeholder select-open"
+                                   placeholder="Противоугонное средство">
+
+                            <svg class="arrow">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+
+                            <div class="make-choice">
+                                <ul class="make-choice-list list-unstyled">
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Hundai
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                    <li>
+                                        <svg class="arrow">
+                                            <use xlink:href="img/sprite.svg#list-arrow"></use>
+                                        </svg>
+                                        Mers
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4>
+                            Вас интересует франшиза?
+                            <span class="hint-box" data-toggle="tooltip" data-placement="top"
+                                  title="Медицинские и меддико страховые расхды, возникшие вследствие занятий застрахованого спортом на профессиональном уровне, включая соревнования, тренировки и сборы."></span>
+                        </h4>
+
+                        <div class="form-group">
+                            <label class="radio-custom-label">
+                                <input type="radio" name="radio3" class="radio-custom">
+                                <span class="radio-custom-yes">Да</span>
+                            </label>
+
+                            <label class="radio-custom-label">
+                                <input type="radio" name="radio3" class="radio-custom">
+                                <span class="radio-custom-no">Нет</span>
+                            </label>
+                        </div>
+
+                        <div class="form-insurance-bottom text-right">
+                            <button class="btn btn-blue">
+                                Продолжить
+                                <svg class="arrow-right">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    -->
+        </form>
+    </section>
+
+    <!-- include "temp/footer.html" -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="terms-information" tabindex="-1" role="dialog" aria-labelledby="termsInformationLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </button>
+
+            <div class="modal-body">
+                <h2 id="termsInformationLabel">Условия передачи информации</h2>
+                <p>Я даю согласие ООО “Шторм+”, место нахождения: 236000, г. Калининград, ул.
+                    Генерал-лейтенанта Озерова 38-1, ИНН 3906165102/390601001 (далее также ООО “Шторм+”), на обработку и
+                    (или) поручение обработки всех моих персональных данных,
+                    в том числе третьими лицами, любыми способами, в том числе включающими сбор,
+                    систематизацию, накопление, хранение, уточнение (обновление, изменение), использование,
+                    распространение (в том числе передачу), воспроизведение, электронное копирование,
+                    обезличивание, блокирование, уничтожение, а также вышеуказанную обработку иных моих персональных
+                    данных, полученных в результате их обработки, с целью:</p>
+                <ul>
+                    <li>регистрации в личном кабинете на официальном сайте www.localagent.ru;</li>
+                    <li>информирования об оказываемых ООО “Шторм+” услугах, тарифах и
+                        предложениях, формируемых, в том числе, аффилированными лицами и партнерами АО
+                        «LOCAL AGENT», прямо или косвенно связанных с предлагаемыми АО «LOCAL AGENT
+                        Страхование» услугами, осуществляемого по сетям электросвязи, в том числе
+                        посредством использования телефонной, факсимильной, подвижной радиотелефонной связи с целью
+                        информирования о предлагаемых страховых и связанных продуктах, проводимых акциях,
+                        мероприятиях, скидках, предложениях;
+                    </li>
+                    <li>подачи заявлений / запросов котировок и обмена иными документами, необходимыми для
+                        заключения и исполнения договоров страхования с ООО “Шторм+”;
+                    </li>
+                    <li>отслеживания статуса рассмотрения заявок на заключение / изменение договоров
+                        страхования, статуса рассмотрения заявленных убытков, просмотра данных по заключенным
+                        договорам страхования, оплаты страховой премии и иных действий, связанных с
+                        представляемых ООО “Шторм+” услугами;
+                    </li>
+                    <li>создания информационных систем персональных данных ООО “Шторм+”</li>
+                    <li>исполнения агентского договора и передачи персональных данных юридическому лицу, от
+                        имени и поручению которого действует ООО “Шторм+”
+                    </li>
+                </ul>
+                <p>Настоящим я подтверждаю, что действую по своей воле, в своем интересе и интересе
+                    третьих лиц. Я подтверждаю, что согласие третьих лиц на передачу и обработку их
+                    персональных данных ООО “Шторм+” получено в порядке, предусмотренном
+                    Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных». Указанное
+                    согласие дано на срок 15 (пятнадцать) лет, а в случае его отзыва, обработка
+                    моих персональных данных должна быть прекращена ООО “Шторм+” и/или третьими
+                    лицами и данные уничтожены при условии прекращения договорных отношений с ООО “Шторм+” в срок не
+                    позднее 1 (одного) года с момента получения
+                    уведомления об отзыве моего согласия на обработку персональных данных и прекращения
+                    отношений с ООО “Шторм+”.</p>
+                <p>Отзыв согласия на обработку персональных данных подается в виде заявления, подписанного
+                    собственноручной подписью субъекта персональных данных и направленного по адресу
+                    местонахождения ООО “Шторм+”.</p>
+                <p>Я даю согласие на предоставление/получение ООО “Шторм+” и его
+                    аффилированными лицами всей имеющейся обо мне информации в объеме, в порядке и на условиях,
+                    определенных Федеральным законом «О кредитных историях» № 218- ФЗ от 30 декабря
+                    2004 года, во все /от всех бюро кредитных историй, включенные в государственный
+                    реестр бюро кредитных историй, а также даю согласие на запрос и предоставление
+                    информации обо мне в бюро страховых историй в объёме, предусмотренном действующим
+                    законодательство РФ.</p>
+                <p>Я даю согласие на получение мной рассылки по сети подвижной радиотелефонной связи
+                    от ООО “Шторм+”, а также его аффилированных лиц и
+                    партнеров.</p>
+                <h2>Условия страхования</h2>
+                <p>На сайте localagent.ru можно оформить полис для ТС, которое зарегистрировано на
+                    территории РФ, не эксплуатируется в режиме такси, проката либо городского
+                    пассажирского транспорта, не сдается в аренду, не используется в режиме
+                    «тест-драйв» (для проведения пробных поездок с целью оценки ходовых качеств ТС и общих
+                    потребительских свойств), не эксплуатируется с прицепом. Во всех прочих случаях
+                    для оформления полиса рекомендуем позвонить по телефону 8 800 755-80-00.</p>
+                <p>Указанная стоимость КАСКО — приблизительная, не является офертой, носит индикативный
+                    характер и может меняться в зависимости от уточнения параметров при
+                    предоставлении всех требуемых Страховщиком данных (включая, но не ограничиваясь:
+                    модель, год выпуска ТС, количество, возраст и стаж лиц, допущенных к управлению ТС
+                    и т.п.).</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

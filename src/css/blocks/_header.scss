@@ -63,7 +63,7 @@ header .container {
   background-color: rgba(#221f1f, .15);
 }
 
-.header-form-type {
+.insurance-form-type {
   padding-left: 40px;
   margin-bottom: 18px;
   list-style: none;
@@ -71,13 +71,13 @@ header .container {
   align-items: center;
 }
 
-.header-form-type_label {
+.insurance-form-type_label {
   margin-right: 20px;
   font-size: 16px;
   @include RobotoRegular;
 }
 
-.header-form-type_item {
+.insurance-form-type_item {
   margin-right: 10px;
   border: 2px solid transparent;
   padding: 9px 11px;
@@ -86,7 +86,7 @@ header .container {
   font-size: 18px;
   transition: all 0.3s ease;
   @include RobotoBold;
-  &:not(.header-form-type_current) {
+  &:not(.insurance-form-type_current) {
     cursor: pointer;
     &:hover {
       opacity: .9;
@@ -94,7 +94,7 @@ header .container {
   }
 }
 
-.header-form-type_current {
+.insurance-form-type_current {
   border-color: #fff;
 }
 

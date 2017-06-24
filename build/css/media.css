@@ -19,14 +19,14 @@
     clear: both;
     content: "";
   }
-  .form-half .form-group {
+  .form-half .form-half-col {
     width: 50%;
     float: left;
   }
-  .form-half .form-group:first-of-type {
+  .form-half .form-half-col:first-of-type {
     padding-right: 15px;
   }
-  .form-half .form-group:last-of-type {
+  .form-half .form-half-col:last-of-type {
     padding-left: 15px;
   }
   .search-left-open .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
@@ -83,12 +83,6 @@
   }
   .contacts-form-toggle {
     display: none;
-  }
-  .form-insurance-bottom {
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
   }
   .add-form {
     display: -webkit-flex;
@@ -839,18 +833,6 @@
   .hint-block-icons .ex-point {
     position: static;
   }
-  .form-insurance-bottom {
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    -webkit-box-pack: end;
-    justify-content: flex-end;
-  }
-  .form-insurance-bottom .btn-blue {
-    margin-left: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    white-space: nowrap;
-  }
   .add-form-link {
     position: absolute;
     bottom: -45px;
@@ -1168,16 +1150,6 @@
   }
   .statistics::before {
     background-position: 25% 50%;
-  }
-  .form-insurance-bottom .btn-blue {
-    margin-left: 0;
-  }
-  .form-insurance-bottom .btn-back {
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    text-align: left;
   }
 }
 

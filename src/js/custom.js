@@ -6,21 +6,41 @@ $(document).ready(function () {
         }
     );
 
-    /* для переключения класов пунктов в шапке формы на главной */
-    var headerFormTypeItem = $('.header-form-type_item');
-    headerFormTypeItem.on('click', function () {
-        headerFormTypeItem.removeClass('header-form-type_current');
-        $(this).addClass('header-form-type_current');
+    /* для переключения класов пунктов в шапке формы на главной и на странице с формами */
+    var insuranceFormTypeItem = $('.insurance-form-type_item');
+    insuranceFormTypeItem.on('click', function () {
+        insuranceFormTypeItem.removeClass('insurance-form-type_current');
+        $(this).addClass('insurance-form-type_current');
     });
 
-
-
-
+    /* Для скрытия формы на мобильных устройствах на странице контактов */
     $(".contacts-form-toggle").click(
         function () {
             $('.contacts-form-toggle').toggleClass("contacts-form-toggle-open");
         }
     );
+
+    /* Инициализация плагина swiper в шапке на главной странице */
+    var swiper = new Swiper('.partners-carousel', {
+        grabCursor: true,
+        slidesPerView: 6,
+        breakpoints: {
+            1199: {
+                slidesPerView: 4
+            },
+            991: {
+                slidesPerView: 3
+            },
+            767: {
+                slidesPerView: 2
+            },
+            320: {
+                slidesPerView: 1
+            }
+        }
+    });
+
+
 
     $(".search-left-head-arrow").click(
         function () {
@@ -54,34 +74,16 @@ $(document).ready(function () {
         $(this).toggleClass('hint-box-open');
     });
 
-    var swiper = new Swiper('.partners-carousel', {
-        grabCursor: true,
-        slidesPerView: 6,
-        breakpoints: {
-            1199: {
-                slidesPerView: 4
-            },
-            991: {
-                slidesPerView: 3
-            },
-            767: {
-                slidesPerView: 2
-            },
-            320: {
-                slidesPerView: 1
-            }
-        }
-    });
 
     var statisticsCarousel = new Swiper('.statistics-carousel', {
         grabCursor: true,
         slidesPerView: 2
     });
 });
-
+/*
 var searchLeftContent = $(".search-left-content");
 
-/*searchLeftContent.mCustomScrollbar({
+searchLeftContent.mCustomScrollbar({
  theme: "dark-3"
  });
 

@@ -72,6 +72,10 @@
   opacity: 1;
 }
 
+.checkbox-custom-label {
+  margin-bottom: 0;
+}
+
 .checkbox-custom {
   display: none;
 }
@@ -105,7 +109,7 @@
   background-color: #ffffff;
   content: '';
   line-height: 1;
-  border-radius: 7px;
+  border-radius: 3px;
   border: 1px solid #e3e3e3;
   transition: all 0.3s ease;
 }
@@ -126,14 +130,15 @@
   transition: all 0.3s ease;
 }
 
-.checkbox-custom-view a {
-  text-decoration: underline;
+.checkbox-custom-label + .as-link {
+  border-bottom: 1px solid;
+  margin-left: 5px;
 }
 
-.checkbox-custom-view a:hover {
-  text-decoration: none;
+.checkbox-custom-label + .as-link:hover {
+  border-bottom-color: transparent;
 }
 
-.checkbox-custom-view a, .checkbox-custom-view span {
-  padding-left: 5px;
+.checkbox-custom-view span {
+  margin-left: 5px;
 }

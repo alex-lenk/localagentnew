@@ -10,6 +10,63 @@
   }
 }
 
+.form-insurance {
+  padding-bottom: 100px;
+  .insurance-form-type_current {
+    border-color: #4f8ad9;
+    color: #4f8ad9;
+  }
+  .insurance-form-type {
+    margin-bottom: 0;
+    padding-left: 0;
+    color: #b0aaaa;
+  }
+  .insurance-form-type_item {
+    margin-right: 20px;
+    padding: 11px 15px 11px 14px;
+    letter-spacing: 2px;
+  }
+  .insurance-form-type_label {
+    margin-right: 30px;
+    color: #505b6a;
+  }
+}
+
+.form-insurance-wrap {
+  padding: 48px 96px 54px;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.form-insurance-top {
+  margin-bottom: 49px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include RobotoBold
+}
+
+.insurance-form-discount {
+  color: #585858;
+  .text-blue {
+    font-size: 22px;
+  }
+}
+
+.form-insurance-bottom {
+  margin-top: 40px;
+  padding-top: 50px;
+  border-top: 1px solid #f2f9fb;
+  display: flex;
+  align-items: center;
+  .btn-blue {
+    margin-left: auto;
+  }
+}
+
+/*
+
 .header-search-right {
   width: 100%;
   padding: 19px 34px 16px 10px;
@@ -22,13 +79,6 @@
   float: right;
 }
 
-.header-insurance .container {
-  position: relative;
-}
-
-.header-insurance .header-title {
-  margin: 56px 0 0;
-}
 
 .clock-info {
   position: absolute;
@@ -41,10 +91,6 @@
 
 .clock-info-text {
   margin-top: 10px;
-}
-
-.form-insurance {
-  padding-bottom: 100px;
 }
 
 .form-insurance .insurance-type {
@@ -515,3 +561,4 @@
   left: auto;
   right: 31px;
 }
+*/

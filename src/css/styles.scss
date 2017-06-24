@@ -26,3 +26,39 @@
 @import "blocks/insurance-steps";
 @import "blocks/worth-services";
 @import "blocks/find-agent";
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.insurance-info {
+  margin-bottom: 50px;
+  min-height: 121px;
+  background-color: #f2f9fb;
+  font-size: 19px;
+  line-height: 1.4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include RobotoRegular;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 50;
+  border: 0;
+  background-color: transparent;
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #b0aaaa;
+  }
+}
+
+#terms-information {
+  line-height: 1.4;
+}
