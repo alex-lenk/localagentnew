@@ -4,6 +4,9 @@
 .header-insurance {
   padding: 0;
   background-color: #1b4d6e;
+  &::before {
+    display: none;
+  }
   .logo {
     max-width: 221px;
     img {
@@ -38,6 +41,12 @@
 
 .form-insurance {
   padding-bottom: 100px;
+  .radio-custom-label {
+    color: #505b6a;
+  }
+  .radio-custom:checked + span {
+    color: #4f8ad9;
+  }
 }
 
 .form-insurance-top {
@@ -132,4 +141,10 @@
       border-color: transparent;
     }
   }
+}
+
+.form-insurance-terms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }

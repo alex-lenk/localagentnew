@@ -1196,10 +1196,6 @@
     }
   }
 
-  .worth-services-media {
-    margin: 0 auto;
-  }
-
   .successfully-subscribed {
     margin-right: 0;
   }
@@ -1698,10 +1694,6 @@
     height: 400px;
   }
 
-  /*  .page .header-form-insurance {
-      height: 200px;
-    }*/
-
   .result-list li {
     font-size: 17px;
   }
@@ -1746,6 +1738,14 @@
 
   .page .header-form-insurance {
     height: 260px;
+  }
+
+  .form-insurance-bottom .as-link {
+    white-space: nowrap;
+  }
+
+  .insurance-steps {
+    margin-bottom: 27px;
   }
 }
 
@@ -1811,5 +1811,48 @@
 
   .statistics::before {
     background-size: cover;
+  }
+}
+
+/**/
+
+@media (max-width: 414px) {
+  .form-insurance-bottom {
+    min-height: 1px;
+    .btn-blue {
+      margin-top: 38px;
+    }
+  }
+
+  .ui-form-type {
+    width: 100%;
+  }
+  .form-insurance-top {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .insurance-steps svg {
+    width: 21px;
+    height: 21px;
+    margin: 10px 0 0 10px;
+  }
+  .insurance-steps-item {
+    max-width: calc(100% / 3 - 20px);
+    flex-basis: calc(100% / 3 - 20px);
+
+    &:not(.insurance-steps-current) .insurance-steps-icon {
+      background-color: #c0b7b7;
+    }
+  }
+  .insurance-steps-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    border-radius: 50%;
+  }
+  .insurance-steps-current .insurance-steps-icon {
+    background-color: #a7c343;
   }
 }

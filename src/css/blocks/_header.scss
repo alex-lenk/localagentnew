@@ -150,7 +150,7 @@ header .container {
 .header-partners {
   .swiper-slide {
     opacity: .55;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease;
     &:hover {
       opacity: 1;
     }

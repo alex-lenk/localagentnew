@@ -1018,9 +1018,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .worth-services-media {
-    margin: 0 auto;
-  }
   .successfully-subscribed {
     margin-right: 0;
   }
@@ -1423,9 +1420,6 @@
   .page .header-about {
     height: 400px;
   }
-  /*  .page .header-form-insurance {
-      height: 200px;
-    }*/
   .result-list li {
     font-size: 17px;
   }
@@ -1460,6 +1454,12 @@
   }
   .page .header-form-insurance {
     height: 260px;
+  }
+  .form-insurance-bottom .as-link {
+    white-space: nowrap;
+  }
+  .insurance-steps {
+    margin-bottom: 27px;
   }
 }
 
@@ -1520,6 +1520,50 @@
   }
   .statistics::before {
     background-size: cover;
+  }
+}
+
+/**/
+@media (max-width: 414px) {
+  .form-insurance-bottom {
+    min-height: 1px;
+  }
+  .form-insurance-bottom .btn-blue {
+    margin-top: 38px;
+  }
+  .ui-form-type {
+    width: 100%;
+  }
+  .form-insurance-top {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .insurance-steps svg {
+    width: 21px;
+    height: 21px;
+    margin: 10px 0 0 10px;
+  }
+  .insurance-steps-item {
+    max-width: -webkit-calc(100% / 3 - 20px);
+    max-width: calc(100% / 3 - 20px);
+    -webkit-flex-basis: -webkit-calc(100% / 3 - 20px);
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+    flex-basis: calc(100% / 3 - 20px);
+  }
+  .insurance-steps-item:not(.insurance-steps-current) .insurance-steps-icon {
+    background-color: #c0b7b7;
+  }
+  .insurance-steps-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .insurance-steps-current .insurance-steps-icon {
+    background-color: #a7c343;
   }
 }
 

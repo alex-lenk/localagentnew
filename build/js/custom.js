@@ -40,8 +40,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     $(".search-left-head-arrow").click(
         function () {
             $('.search-left').toggleClass("search-left-open search-left-closed");
@@ -80,6 +78,8 @@ $(document).ready(function () {
         slidesPerView: 2
     });
 });
+
+
 /*
 var searchLeftContent = $(".search-left-content");
 
