@@ -1,9 +1,9 @@
 {
-    "name": "LocalAgent",
+    "name": "localagent",
     "icons": [
         {
-            "src": "/android-chrome-144x144.png",
-            "sizes": "144x144",
+            "src": "/img/favicon/android-chrome-72x72.png?v=7knwbJNyb4",
+            "sizes": "72x72",
             "type": "image/png"
         }
     ],
