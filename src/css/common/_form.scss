@@ -2,6 +2,7 @@
   opacity: 1;
   color: #b0aaaa;
   transition: opacity 0.3s ease;
+  font-weight: normal;
   @include RobotoLight;
 }
 
@@ -9,6 +10,7 @@
   opacity: 1;
   color: #b0aaaa;
   transition: opacity 0.3s ease;
+  font-weight: normal;
   @include RobotoLight;
 }
 
@@ -16,34 +18,32 @@
   opacity: 1;
   color: #b0aaaa;
   transition: opacity 0.3s ease;
+  font-weight: normal;
   @include RobotoLight;
 }
 
 .hide-placeholder:-ms-input-placeholder {
   opacity: 1;
-  transition: opacity 0.3s ease;
   color: #b0aaaa;
+  transition: opacity 0.3s ease;
+  font-weight: normal;
   @include RobotoLight;
 }
 
 .hide-placeholder:focus::-webkit-input-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .hide-placeholder:focus::-moz-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .hide-placeholder:focus:-moz-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .hide-placeholder:focus:-ms-input-placeholder {
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .form-group {

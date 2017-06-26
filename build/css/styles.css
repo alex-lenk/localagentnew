@@ -203,6 +203,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   color: #b0aaaa;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  font-weight: normal;
   font-family: "Roboto-Light", sans-serif;
 }
 
@@ -211,6 +212,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   color: #b0aaaa;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  font-weight: normal;
   font-family: "Roboto-Light", sans-serif;
 }
 
@@ -219,39 +221,33 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   color: #b0aaaa;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  font-weight: normal;
   font-family: "Roboto-Light", sans-serif;
 }
 
 .hide-placeholder:-ms-input-placeholder {
   opacity: 1;
+  color: #b0aaaa;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  color: #b0aaaa;
+  font-weight: normal;
   font-family: "Roboto-Light", sans-serif;
 }
 
 .hide-placeholder:focus::-webkit-input-placeholder {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
 .hide-placeholder:focus::-moz-placeholder {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
 .hide-placeholder:focus:-moz-placeholder {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
 .hide-placeholder:focus:-ms-input-placeholder {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
 .form-group {
@@ -3531,6 +3527,7 @@ li.search-show-map a:hover {
 }
 
 .insurance-info {
+  min-height: 122px;
   margin-bottom: 47px;
   padding-top: 43px;
   padding-bottom: 30px;
@@ -3546,6 +3543,10 @@ li.search-show-map a:hover {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Roboto-Regular", sans-serif;
 }
 
@@ -3653,6 +3654,48 @@ li.search-show-map a:hover {
 
 .btn-light-area .btn-light:not(:last-of-type) {
   margin-right: 20px;
+}
+
+.step-fo {
+  font-family: "Roboto-Light", sans-serif;
+}
+
+.step-fo .progress {
+  margin-bottom: 41px;
+}
+
+.step-fo .form-group {
+  max-width: 457px;
+  margin-top: 22px;
+  margin-bottom: 37px;
+}
+
+.step-fo textarea.form-control {
+  height: 80px;
+  padding-top: 29px;
+}
+
+.step-fo .text {
+  color: #505b6a;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.step-fo .text-big {
+  font-size: 18px;
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.send-again {
+  margin-bottom: 20px;
+}
+
+.send-again a {
+  border-bottom: 1px solid;
+}
+
+.send-again a:hover {
+  border-color: transparent;
 }
 
 .worth-services {

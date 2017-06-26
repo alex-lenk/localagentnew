@@ -21,6 +21,7 @@
 @import "insurance-steps";
 
 .insurance-info {
+  min-height: 122px;
   margin-bottom: 47px;
   padding-top: 43px;
   padding-bottom: 30px;
@@ -30,6 +31,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   @include RobotoRegular;
 }
 
@@ -110,9 +112,42 @@
 
 .btn-light-area {
   display: flex;
-  .btn-light {
-    &:not(:last-of-type) {
-      margin-right: 20px;
+  .btn-light:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.step-fo {
+  @include RobotoLight;
+  .progress {
+    margin-bottom: 41px;
+  }
+  .form-group {
+    max-width: 457px;
+    margin-top: 22px;
+    margin-bottom: 37px;
+  }
+  textarea.form-control {
+    height: 80px;
+    padding-top: 29px;
+  }
+  .text {
+    color: #505b6a;
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .text-big {
+    font-size: 18px;
+    @include RobotoRegular;
+  }
+}
+
+.send-again {
+  margin-bottom: 20px;
+  a {
+    border-bottom: 1px solid;
+    &:hover {
+      border-color: transparent;
     }
   }
 }
