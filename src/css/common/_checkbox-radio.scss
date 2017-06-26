@@ -9,7 +9,8 @@
   cursor: pointer;
 }
 
-.radio-custom-yes, .radio-custom-no {
+.radio-custom-yes,
+.radio-custom-no {
   width: 63px;
   height: 50px;
   float: right;
@@ -27,7 +28,8 @@
   transition: all 0.3s ease;
 }
 
-.radio-custom-yes::before, .radio-custom-no::before {
+.radio-custom-yes::before,
+.radio-custom-no::before {
   width: 125px;
   height: 50px;
   content: '';
@@ -35,7 +37,7 @@
   right: 0;
   top: 0;
   border: 1px solid #e3e3e3;
-  border-radius: 25px;
+  border-radius: 3px;
 }
 
 .radio-custom-yes::after, .radio-custom-no::after {

@@ -23,25 +23,11 @@
 @import "blocks/blog";
 @import "blocks/search-page";
 @import "blocks/form-insurance";
-@import "blocks/insurance-steps";
 @import "blocks/worth-services";
 @import "blocks/find-agent";
 
 .wrapper {
   overflow-x: hidden;
-}
-
-.insurance-info {
-  margin-bottom: 47px;
-  padding-top: 43px;
-  padding-bottom: 30px;
-  background-color: #f2f9fb;
-  font-size: 18px;
-  line-height: 1.3;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  @include RobotoRegular;
 }
 
 .modal-close {

@@ -18,6 +18,21 @@
   }
 }
 
+@import "insurance-steps";
+
+.insurance-info {
+  margin-bottom: 47px;
+  padding-top: 43px;
+  padding-bottom: 30px;
+  background-color: #f2f9fb;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  @include RobotoRegular;
+}
+
 .form-insurance {
   padding-bottom: 100px;
   .insurance-form-type_current {
@@ -48,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include RobotoBold
+  @include RobotoBold;
 }
 
 .insurance-form-discount {
@@ -67,5 +82,33 @@
   .btn-blue {
     min-width: 221px;
     margin-left: auto;
+  }
+}
+
+.form-insurance-set {
+  margin-bottom: 10px;
+  padding-top: 5px;
+  .radio-custom-label:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+.form-insurance-title {
+  margin-bottom: 25px;
+  padding-top: 0;
+  font-size: 20px;
+  color: #505b6a;
+  @include RobotoRegular;
+}
+
+.step-two {
+  .form-insurance-bottom {
+    padding-left: 0;
+  }
+  .btn-blue {
+    margin-top: 0;
+    min-width: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
