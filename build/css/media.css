@@ -186,6 +186,18 @@
     -ms-flex-align: end;
     align-items: flex-end;
   }
+  .form-insurance-wrap {
+    border: 1px solid #e3e3e3;
+    overflow: hidden;
+  }
+  .insurance-steps-item {
+    height: 80px;
+    font-size: 16px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 993px) {
@@ -244,6 +256,18 @@
   }
   footer {
     background-size: 100%;
+  }
+  .insurance-steps-item:first-of-type {
+    padding-left: 35px;
+  }
+  .insurance-steps-item:last-of-type {
+    padding-right: 53px;
+  }
+  .insurance-info {
+    font-size: 19px;
+  }
+  .form-insurance-wrap {
+    padding: 48px 96px 54px;
   }
 }
 
@@ -365,10 +389,6 @@
   .footer-subscribe {
     padding-top: 37px;
   }
-  /*  .header-form-insurance .header-title {
-    margin-top: 53px;
-    font-size: 30px;
-  }*/
   .clock-info {
     right: 15px;
     top: 0;
@@ -551,10 +571,10 @@
   .faq-page .faq-sidebar-text {
     padding-left: 20px;
   }
-  .header-search-right {
+  .btn-help {
     padding: 19px 21px 17px 21px;
   }
-  .header-search-right .phone-help {
+  .btn-help .phone-help {
     top: -1px;
   }
   .worth-services .col-sm-6:not(.worth-services-last) {
@@ -808,13 +828,8 @@
   .clock-info {
     display: none;
   }
-  /*  .page .header-form-insurance .header-title {
-    font-size: 16px;
-    padding-top: 19px;
-    text-align: center;
-  }*/
   .form-insurance {
-    padding-top: 15px;
+    padding-top: 27px;
   }
   .hint-block-icons {
     display: -webkit-flex;
@@ -868,11 +883,11 @@
     -webkit-box-direction: normal;
     flex-direction: column;
   }
-  .header-search-right {
+  .btn-help {
     width: auto;
     margin-top: 2px;
   }
-  .header-search-right .btn-white {
+  .btn-help .btn-white {
     width: 64px;
     height: 56px;
     padding: 0;
@@ -889,7 +904,7 @@
     -webkit-box-align: center;
     align-items: center;
   }
-  .header-search-right .phone-help {
+  .btn-help .phone-help {
     width: 23px;
     height: 19px;
     margin-right: 0;
@@ -1332,6 +1347,31 @@
     -webkit-box-flex: 1;
     flex: 1 0 212px;
   }
+  .form-insurance-wrap {
+    padding: 50px 30px;
+  }
+  .form-insurance .insurance-form-type_label {
+    margin-right: 24px;
+  }
+  .form-insurance .insurance-form-type_item {
+    margin-right: 9px;
+    letter-spacing: 0;
+  }
+  .insurance-form-type_label {
+    font-size: 17px;
+  }
+  .insurance-form-type_item {
+    font-size: 21px;
+  }
+  .insurance-form-discount {
+    font-size: 18px;
+  }
+  .insurance-form-discount .text-blue {
+    font-size: 20px;
+  }
+  .progress-text {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
@@ -1357,8 +1397,8 @@
     height: 400px;
   }
   /*  .page .header-form-insurance {
-    height: 200px;
-  }*/
+      height: 200px;
+    }*/
   .result-list li {
     font-size: 17px;
   }
@@ -1427,13 +1467,6 @@
     -ms-flex-line-pack: center;
     align-content: center;
   }
-}
-
-@media (min-width: 415px) and (max-width: 992px) {
-  /*  .page .header-form-insurance::after {
-    height: 112px;
-    background-position: 18% 0;
-  }*/
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min--moz-device-pixel-ratio: 1.5) {

@@ -144,3 +144,22 @@
   transform: rotateZ(180deg);
   fill: #505b6a;
 }
+
+.btn-help {
+  width: 100%;
+  padding: 18px 40px 16px 34px;
+  max-width: 291px;
+  text-align: right;
+  position: relative;
+  z-index: 9;
+  float: right;
+}
+
+.btn-help .phone-help {
+  width: 20px;
+  height: 20px;
+  margin-right: 11px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}

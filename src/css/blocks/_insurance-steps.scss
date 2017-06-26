@@ -2,9 +2,6 @@
   overflow: hidden;
   border-bottom: 1px solid #e3e3e3;
   svg {
-    width: 21px;
-    height: 21px;
-    margin: 10px 0 0 10px;
     fill: #fff;
   }
 }
@@ -17,20 +14,14 @@
 }
 
 .insurance-steps-item {
-  height: 80px;
   position: relative;
-  font-size: 16px;
   text-transform: uppercase;
   color: #c0b7b7;
-  max-width: 31%;
-  flex-basis: 31%;
   display: flex;
-  align-items: center;
   @include RobotoBold;
   .auto {
     width: 21px;
     height: 21px;
-    margin: 10px 0 0 10px;
   }
 
   .arrow-right {
@@ -43,7 +34,6 @@
   }
 
   &:first-of-type {
-    padding-left: 35px;
     background-color: #4f8ad9;
     &::before {
       width: 160rem;
@@ -70,10 +60,6 @@
     content: '';
   }
 
-  &:not(.insurance-steps-current) .insurance-steps-icon {
-    background-color: #c0b7b7;
-  }
-
   &:not(:first-of-type):not(:last-of-type) {
     justify-content: center;
     &::after {
@@ -85,22 +71,156 @@
   }
 
   &:last-of-type {
-    padding-right: 53px;
     justify-content: flex-end;
   }
 }
 
 .insurance-steps-current {
   color: #fff;
-  .insurance-steps-icon {
-    background-color: #a7c343;
+}
+
+.form-insurance-bottom {
+  .checkbox-custom-label {
+    margin-right: 5px;
+  }
+  .as-link {
+    text-decoration: underline;
+  }
+
+  .checkbox-custom-label + .as-link:hover {
+    text-decoration: none;
+  }
+
+  .checkbox-custom-view span {
+    margin-left: 5px;
   }
 }
 
-.insurance-steps-icon {
-  background-color: #a7c343;
-  width: 40px;
-  height: 40px;
-  margin-right: 25px;
-  border-radius: 50%;
+@media (max-width: 768px) {
+  .insurance-steps {
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+    .driver {
+      width: 18px;
+      height: 20px;
+    }
+  }
+  .insurance-steps-wrap {
+    padding: 0;
+  }
+  .insurance-steps-item {
+    padding: 14px 0;
+    font-size: 12px;
+    max-width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
+    flex-direction: column;
+    align-items: center;
+    &:not(.insurance-steps-current) svg {
+      fill: #c0b7b7;
+    }
+  }
+  .insurance-steps-icon {
+    margin-bottom: 5px;
+  }
+  .insurance-steps-item:not(:last-of-type)::after {
+    margin-top: 0;
+    top: 18px;
+  }
+  .insurance-steps-item .arrow-right {
+    right: -24px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+  }
+  .insurance-steps-item:not(:first-of-type):not(:last-of-type) {
+    &::after {
+      right: -5px;
+    }
+    .arrow-right {
+      right: -21px;
+    }
+  }
+  .form-insurance-top {
+    flex-direction: column;
+  }
+  .insurance-form-type {
+    width: 100%;
+  }
+  .form-insurance .insurance-form-type {
+    margin-bottom: 33px;
+  }
+  .form-insurance .insurance-form-type_label {
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+  .form-insurance .insurance-form-type_item {
+    padding-right: 12px;
+  }
+  .form-insurance .insurance-form-type_item:not(:last-of-type) {
+    margin-right: 11px;
+  }
+  .insurance-form-discount {
+    font-size: 20px;
+    .text-blue {
+      font-size: 21px;
+    }
+  }
+  .form-insurance-top {
+    margin-bottom: 28px;
+  }
+  .progress {
+    height: 40px;
+  }
+  .form-insurance-bottom {
+    min-height: 161px;
+    padding-top: 23px;
+    padding-left: 48px;
+    flex-wrap: wrap;
+  }
+  .checkbox-custom-label {
+    margin-left: -48px;
+    + .as-link {
+      margin-left: 0;
+      display: inline-block;
+    }
+  }
+  .form-control {
+    height: 69px;
+  }
+}
+
+@media (max-width: 414px) {
+  .form-insurance-bottom {
+    min-height: 1px;
+    .btn-blue {
+      margin-top: 38px;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .insurance-steps svg {
+    width: 21px;
+    height: 21px;
+    margin: 10px 0 0 10px;
+  }
+  .insurance-steps-item {
+    max-width: calc(100% / 3 - 20px);
+    flex-basis: calc(100% / 3 - 20px);
+
+    &:not(.insurance-steps-current) .insurance-steps-icon {
+      background-color: #c0b7b7;
+    }
+  }
+  .insurance-steps-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    border-radius: 50%;
+  }
+  .insurance-steps-current .insurance-steps-icon {
+    background-color: #a7c343;
+  }
 }
