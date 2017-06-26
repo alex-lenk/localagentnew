@@ -221,7 +221,7 @@
     letter-spacing: -.2px;
   }
   .contacts-requisites li:not(:last-child) {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
   .contacts-requisites .text-selection {
     width: 195px;
@@ -490,9 +490,6 @@
   }
   .latest-articles .title {
     margin-bottom: 65px;
-  }
-  .contacts-emails .text-selection {
-    display: block;
   }
   .contacts-emails li:not(:first-child):not(:last-child) {
     margin-top: -2px;
