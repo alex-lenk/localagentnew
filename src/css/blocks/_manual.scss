@@ -1,16 +1,20 @@
 .manual {
   padding-top: 87px;
-  padding-bottom: 113px;
+  padding-bottom: 109px;
+
+  .h3 {
+    padding-top: 23px;
+    margin-bottom: 22px;
+  }
 
   .btn-blue {
     margin-top: 22px;
   }
-}
-
-.manual .container:after {
-  display: table;
-  clear: both;
-  content: "";
+  .container:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }
 
 .manual-title {
@@ -52,10 +56,6 @@
   padding: 105px 0 98px;
   position: relative;
   background-color: #f7f7f7;
-  .h3 {
-    padding-top: 27px;
-    margin-bottom: 22px;
-  }
 }
 
 .manual-two .manual-text {
@@ -73,10 +73,6 @@
 
 .manual-three {
   padding-top: 114px;
-  .h3 {
-    padding-top: 27px;
-    margin-bottom: 22px;
-  }
 }
 
 .manual-three .manual-media {

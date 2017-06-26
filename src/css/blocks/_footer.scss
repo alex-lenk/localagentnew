@@ -69,14 +69,16 @@ footer {
 }
 
 .successfully-subscribed {
-  padding: 0 10px 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
   border-bottom: 1px solid #fff;
   margin-top: -15px;
   font-size: 16px;
+  margin-right: 40px;
   .selected {
     width: 24px;
     height: 24px;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
     fill: #fff;
     display: inline-block;
     vertical-align: bottom;
@@ -135,6 +137,6 @@ footer {
 }
 
 .copyright {
-  padding: 33px 0 0 42px;
+  padding: 33px 0 0 56px;
   font-size: 15px;
 }

@@ -639,6 +639,10 @@
 }
 
 @media (max-width: 768px) {
+  header {
+    padding-top: 29px;
+  }
+
   .manual-pre-title {
     margin-bottom: 70px;
   }
@@ -815,6 +819,7 @@
 
   .faq {
     padding-top: 78px;
+    padding-bottom: 53px;
   }
 
   .faq .title {
@@ -828,6 +833,10 @@
   .faq-body {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .find-agent {
+    padding: 23px 0;
   }
 
   .partners {
@@ -880,6 +889,7 @@
   }
 
   .copyright {
+    padding-left: 0;
     margin-top: 5px;
     font-size: 15px;
     -webkit-order: 2;
@@ -1189,6 +1199,18 @@
       padding-right: 20px;
     }
   }
+
+  .worth-services-media {
+    margin: 0 auto;
+  }
+
+  .successfully-subscribed {
+    margin-right: 0;
+  }
+
+  .successfully-subscribed-text {
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1223,7 +1245,12 @@
   }
 
   header .logo {
+    width: 190px;
     padding-right: 0;
+  }
+
+  .navbar {
+    padding-top: 0;
   }
 
   header .header-title {
