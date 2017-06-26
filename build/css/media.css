@@ -267,7 +267,7 @@
     font-size: 19px;
   }
   .form-insurance-wrap {
-    padding: 48px 96px 54px;
+    padding: 65px 96px 46px;
   }
 }
 
@@ -1359,17 +1359,17 @@
   .form-insurance-wrap {
     padding: 50px 30px;
   }
-  .form-insurance .insurance-form-type_label {
+  .form-insurance .ui-form-type_label {
     margin-right: 24px;
   }
-  .form-insurance .insurance-form-type_item {
+  .form-insurance .ui-form-type_item {
     margin-right: 9px;
     letter-spacing: 0;
   }
-  .insurance-form-type_label {
+  .ui-form-type_label {
     font-size: 17px;
   }
-  .insurance-form-type_item {
+  .ui-form-type_item {
     font-size: 21px;
   }
   .insurance-form-discount {

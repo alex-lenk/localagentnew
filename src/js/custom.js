@@ -7,10 +7,10 @@ $(document).ready(function () {
     );
 
     /* для переключения класов пунктов в шапке формы на главной и на странице с формами */
-    var insuranceFormTypeItem = $('.insurance-form-type_item');
-    insuranceFormTypeItem.on('click', function () {
-        insuranceFormTypeItem.removeClass('insurance-form-type_current');
-        $(this).addClass('insurance-form-type_current');
+    var uiFormTypeItem = $('.ui-form-type_item');
+    uiFormTypeItem.on('click', function () {
+        uiFormTypeItem.removeClass('ui-form-type_current');
+        $(this).addClass('ui-form-type_current');
     });
 
     /* Для скрытия формы на мобильных устройствах на странице контактов */

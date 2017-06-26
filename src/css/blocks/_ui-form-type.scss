@@ -1,0 +1,40 @@
+.ui-form-type {
+  margin-bottom: 0;
+  padding-left: 0;
+  color: #b0aaaa;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.ui-form-type_label {
+  margin-right: 30px;
+  color: #505b6a;
+  font-size: 16px;
+  @include RobotoRegular;
+}
+
+.ui-form-type_item {
+  padding: 11px 15px 11px 14px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  @include RobotoBold;
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  &:not(.ui-form-type_current) {
+    cursor: pointer;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+.ui-form-type_current {
+  border-color: #4f8ad9;
+  color: #4f8ad9;
+}

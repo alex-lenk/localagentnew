@@ -61,41 +61,30 @@ header .container {
   margin: 0 auto 110px;
   padding: 30px 67px;
   background-color: rgba(#221f1f, .15);
-}
 
-.insurance-form-type {
-  padding-left: 40px;
-  margin-bottom: 18px;
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
+  .ui-form-type {
+    padding-left: 40px;
+    margin-bottom: 18px;
+    color: #fff;
+  }
 
-.insurance-form-type_label {
-  margin-right: 20px;
-  font-size: 16px;
-  @include RobotoRegular;
-}
+  .ui-form-type_label {
+    margin-right: 20px;
+    color: #fff;
+  }
 
-.insurance-form-type_item {
-  margin-right: 10px;
-  border: 2px solid transparent;
-  padding: 9px 11px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  @include RobotoBold;
-  &:not(.insurance-form-type_current) {
-    cursor: pointer;
-    &:hover {
-      opacity: .9;
+  .ui-form-type_item {
+    padding: 9px 11px;
+    letter-spacing: 0;
+    &:not(:last-of-type) {
+      margin-right: 10px;
     }
   }
-}
 
-.insurance-form-type_current {
-  border-color: #fff;
+  .ui-form-type_current {
+    border-color: #fff;
+    color: #fff;
+  }
 }
 
 .header-form-search {
