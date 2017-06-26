@@ -88,9 +88,10 @@
 .form-insurance-set {
   margin-bottom: 10px;
   padding-top: 5px;
-  .radio-custom-label:not(:last-of-type) {
-    margin-right: 20px;
-  }
+}
+
+.wrap-yes-no .radio-custom-label:not(:last-of-type) {
+  margin-right: 20px;
 }
 
 .form-insurance-title {
@@ -101,14 +102,17 @@
   @include RobotoRegular;
 }
 
-.step-two {
-  .form-insurance-bottom {
-    padding-left: 0;
+.step-three {
+  .form-half .form-half-col:last-of-type {
+    text-align: right;
   }
-  .btn-blue {
-    margin-top: 0;
-    min-width: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+.btn-light-area {
+  display: flex;
+  .btn-light {
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
   }
 }

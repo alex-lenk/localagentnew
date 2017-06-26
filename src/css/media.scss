@@ -1177,6 +1177,18 @@
   .pagination-prev a:hover svg, .pagination-next a:hover svg {
     fill: #b5afaf;
   }
+
+  .step-two {
+    .form-insurance-bottom {
+      padding-left: 0;
+    }
+    .btn-blue {
+      margin-top: 0;
+      min-width: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 
 @media (max-width: 500px) {

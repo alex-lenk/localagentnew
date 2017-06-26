@@ -34,7 +34,7 @@
                 <span class="insurance-steps-text">1. Автомобиль</span>
             </li>
 
-            <li class="insurance-steps-item insurance-steps-current">
+            <li class="insurance-steps-item">
                 <div class="insurance-steps-icon">
                     <svg class="driver">
                         <use xlink:href="img/sprite.svg#driver"></use>
@@ -48,7 +48,7 @@
                 <span class="insurance-steps-text">2. Водитель</span>
             </li>
 
-            <li class="insurance-steps-item">
+            <li class="insurance-steps-item insurance-steps-current">
                 <div class="insurance-steps-icon">
                     <svg class="list">
                         <use xlink:href="img/sprite.svg#list"></use>
@@ -65,7 +65,7 @@
         <br class="hidden-sm">автомобиле.</span>
     </div>
 
-    <section class="form-insurance step-two container">
+    <section class="form-insurance step-three container">
         <form action="#" class="form-insurance-wrap">
             <div class="form-insurance-top">
                 <ul class="insurance-form-type">
@@ -84,44 +84,101 @@
                 <div class="progress-text">+0.5% за заполнения поля “Дата рождения”</div>
             </div>
 
-            <fieldset class="form-insurance-set">
-                <h4 class="form-insurance-title">Вы страховали этот автомобиль ранее?</h4>
+            <div class="form-half">
+                <div class="form-half-col">
+                    <h4 class="form-insurance-title">Водитель (Вы)</h4>
 
-                <div class="form-group wrap-yes-no">
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio" class="radio-custom" checked>
-                        <span class="radio-custom-yes">Да</span>
-                    </label>
-
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio" class="radio-custom">
-                        <span class="radio-custom-no">Нет</span>
-                    </label>
+                    <div class="form-group required-field">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Дата рождения">
+                    </div>
                 </div>
 
-                <div class="form-group required-field">
-                    <input type="text" class="form-control hide-placeholder" placeholder="Название страховой кампании">
-                </div>
-            </fieldset>
-
-
-            <fieldset class="form-insurance-set">
-                <h4 class="form-insurance-title">
-                    Были ли страховые случаи?
-                </h4>
-
-                <div class="form-group wrap-yes-no">
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio2" class="radio-custom">
-                        <span class="radio-custom-yes">Да</span>
+                <div class="form-half-col">
+                    <label class="checkbox-custom-label">
+                        <input type="checkbox" name="" class="checkbox-custom">
+                        <span class="checkbox-custom-view">Без ограничений</span>
                     </label>
 
-                    <label class="radio-custom-label">
-                        <input type="radio" name="radio2" class="radio-custom">
-                        <span class="radio-custom-no">Нет</span>
-                    </label>
+                    <div class="form-group required-field">
+                        <input type="text" class="form-control hide-placeholder" placeholder="Стаж вождения">
+                    </div>
                 </div>
-            </fieldset>
+            </div>
+
+            <div class="form-half">
+                <div class="form-half-col">
+                    <h4 class="form-insurance-title">Укажите пол</h4>
+
+                    <div class="btn-light-area">
+                        <button class="btn-light btn active">Мужской</button>
+                        <button class="btn-light btn">Женский</button>
+                    </div>
+                </div>
+
+                <div class="form-half-col">
+                    <h4 class="form-insurance-title">Состоите в браке ?</h4>
+
+                    <div class="form-group wrap-yes-no">
+                        <label class="radio-custom-label">
+                            <input type="radio" name="radio" class="radio-custom" checked>
+                            <span class="radio-custom-yes">Да</span>
+                        </label>
+
+                        <label class="radio-custom-label">
+                            <input type="radio" name="radio" class="radio-custom">
+                            <span class="radio-custom-no">Нет</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-insurance-set">
+                <h4 class="form-insurance-title">Количество детей</h4>
+
+                <div class="btn-light-area">
+                    <button class="btn-light btn active">Нет детей</button>
+                    <button class="btn-light btn">1</button>
+                    <button class="btn-light btn">2</button>
+                    <button class="btn-light btn">3</button>
+                    <button class="btn-light btn">4 и более</button>
+                </div>
+            </div>
+
+            <h2>Контактная информация</h2>
+
+            <div class="form-group required-field">
+                <input type="text" class="form-control hide-placeholder" placeholder="Фамилия, имя и отчество">
+            </div>
+
+            <div class="form-half">
+                <div class="form-half-col form-group required-field">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Город проживания">
+                </div>
+
+                <div class="form-half-col form-group required-field">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Адрес">
+                </div>
+            </div>
+
+            <div class="form-half">
+                <div class="form-half-col form-group required-field">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Мобильный телефон">
+                </div>
+
+                <div class="form-half-col form-group required-field">
+                    <input type="email" class="form-control hide-placeholder" placeholder="Электронная почта">
+                </div>
+            </div>
+
+            <div class="form-half">
+                <div class="form-half-col form-group">
+                    <input type="text" class="form-control hide-placeholder" placeholder="Когда нужен полис?">
+                </div>
+
+                <div class="form-half-col form-group">
+                    <input type="email" class="form-control hide-placeholder" placeholder="Удобное время для связи">
+                </div>
+            </div>
 
             <div class="form-insurance-bottom">
                 <button class="btn btn-back">

@@ -590,6 +590,8 @@ textarea.form-control {
   cursor: pointer;
   line-height: 1;
   display: inline-block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -599,8 +601,6 @@ textarea.form-control {
   background-color: #4f8ad9;
   color: #fff;
   font-size: 15px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   text-transform: uppercase;
   -webkit-box-shadow: 0 8px 12px rgba(79, 138, 217, 0.24);
   box-shadow: 0 8px 12px rgba(79, 138, 217, 0.24);
@@ -637,13 +637,29 @@ textarea.form-control {
   background-color: #ffffff;
   color: #4f8ad9;
   font-size: 15px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   text-transform: uppercase;
   border: 2px solid #4f8ad9;
   -webkit-box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
   box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
   font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-light {
+  padding: 18px 29px;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #585858;
+  border: 1px solid #e5e5e5;
+  font-family: "Roboto-Light", sans-serif;
+}
+
+.btn-light:not(.active):hover {
+  border-color: #4f8ad9;
+}
+
+.btn-light.active {
+  color: #4f8ad9;
+  border-color: #4f8ad9;
 }
 
 .btn-transparent:hover, .btn-transparent:active {
@@ -679,8 +695,6 @@ textarea.form-control {
   text-transform: uppercase;
   font-size: 15px;
   color: #4f8ad9;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
   box-shadow: 0 8px 12px rgba(79, 138, 217, 0.25);
@@ -3346,6 +3360,16 @@ li.search-show-map a:hover {
   fill: #c0b7b7;
 }
 
+.insurance-steps-current:last-of-type::after {
+  width: 160rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: inherit;
+  content: '';
+}
+
 .form-insurance-bottom .checkbox-custom-label {
   margin-right: 5px;
 }
@@ -3604,7 +3628,7 @@ li.search-show-map a:hover {
   padding-top: 5px;
 }
 
-.form-insurance-set .radio-custom-label:not(:last-of-type) {
+.wrap-yes-no .radio-custom-label:not(:last-of-type) {
   margin-right: 20px;
 }
 
@@ -3616,15 +3640,19 @@ li.search-show-map a:hover {
   font-family: "Roboto-Regular", sans-serif;
 }
 
-.step-two .form-insurance-bottom {
-  padding-left: 0;
+.step-three .form-half .form-half-col:last-of-type {
+  text-align: right;
 }
 
-.step-two .btn-blue {
-  margin-top: 0;
-  min-width: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+.btn-light-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-light-area .btn-light:not(:last-of-type) {
+  margin-right: 20px;
 }
 
 .worth-services {
