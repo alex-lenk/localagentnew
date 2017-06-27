@@ -72,6 +72,7 @@ h2, .h2, h3, .h3, h4 {
   padding: 0;
   font-weight: normal;
   line-height: 1.2;
+  color: #585858;
 }
 
 h1, .h1 {
@@ -641,7 +642,7 @@ textarea.form-control {
 }
 
 .btn-light {
-  padding: 18px 29px;
+  padding: 16px 23px 17px 24px;
   background-color: #ffffff;
   font-size: 15px;
   color: #585858;
@@ -3301,7 +3302,7 @@ li.search-show-map a:hover {
   fill: #fff;
   position: absolute;
   right: -30px;
-  top: 21px;
+  top: 20px;
   width: 19px;
   height: 19px;
   z-index: 5;
@@ -3382,128 +3383,8 @@ li.search-show-map a:hover {
   content: '';
 }
 
-.form-insurance-bottom .checkbox-custom-label {
-  margin-right: 5px;
-}
-
-.form-insurance-bottom .as-link {
-  text-decoration: underline;
-}
-
-.form-insurance-bottom .checkbox-custom-label + .as-link:hover {
-  text-decoration: none;
-}
-
-.form-insurance-bottom .checkbox-custom-view span {
-  margin-left: 5px;
-}
-
 .insurance-steps-icon, .insurance-steps-text {
   z-index: 5;
-}
-
-@media (max-width: 768px) {
-  .insurance-steps svg {
-    width: 15px;
-    height: 15px;
-  }
-  .insurance-steps .driver {
-    width: 18px;
-    height: 20px;
-  }
-  .insurance-steps-wrap {
-    padding: 0;
-  }
-  .insurance-steps-item {
-    padding: 14px 0;
-    font-size: 12px;
-    max-width: -webkit-calc(100% / 3);
-    max-width: calc(100% / 3);
-    -webkit-flex-basis: -webkit-calc(100% / 3);
-    -ms-flex-preferred-size: calc(100% / 3);
-    flex-basis: calc(100% / 3);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .insurance-steps-item:not(.insurance-steps-current) svg {
-    fill: #c0b7b7;
-  }
-  .insurance-steps-icon {
-    margin-bottom: 5px;
-  }
-  .insurance-steps-item:not(:last-of-type)::after {
-    margin-top: 0;
-    top: 18px;
-  }
-  .insurance-steps-item .arrow-right {
-    right: -24px;
-    top: 17px;
-    width: 16px;
-    height: 16px;
-  }
-  .insurance-steps-item:not(:first-of-type):not(:last-of-type)::after {
-    right: -5px;
-  }
-  .insurance-steps-item:not(:first-of-type):not(:last-of-type) .arrow-right {
-    right: -21px;
-  }
-  .form-insurance-top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .form-insurance .ui-form-type {
-    margin-bottom: 33px;
-  }
-  .form-insurance .ui-form-type_label {
-    margin-right: 20px;
-    white-space: nowrap;
-  }
-  .form-insurance .ui-form-type_item {
-    padding-right: 12px;
-  }
-  .form-insurance .ui-form-type_item:not(:last-of-type) {
-    margin-right: 11px;
-  }
-  .insurance-form-discount {
-    font-size: 20px;
-  }
-  .insurance-form-discount .text-blue {
-    font-size: 21px;
-  }
-  .form-insurance-top {
-    margin-bottom: 28px;
-  }
-  .progress {
-    height: 40px;
-  }
-  .form-insurance-bottom {
-    min-height: 161px;
-    padding-top: 23px;
-    padding-left: 48px;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .checkbox-custom-label {
-    margin-left: -48px;
-  }
-  .checkbox-custom-label + .as-link {
-    margin-right: 10px;
-    display: inline-block;
-  }
-  .form-control {
-    height: 69px;
-  }
 }
 
 .header-insurance {
@@ -3577,8 +3458,7 @@ li.search-show-map a:hover {
 }
 
 .form-insurance-top {
-  margin-top: -18px;
-  margin-bottom: 49px;
+  margin-bottom: 43px;
   font-size: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3603,7 +3483,7 @@ li.search-show-map a:hover {
   font-size: 22px;
 }
 
-.form-insurance-bottom {
+.ui-nav {
   margin-top: 40px;
   padding-top: 50px;
   border-top: 1px solid #f2f9fb;
@@ -3617,9 +3497,25 @@ li.search-show-map a:hover {
   align-items: center;
 }
 
-.form-insurance-bottom .btn-blue {
+.ui-nav .btn-blue {
   min-width: 221px;
   margin-left: auto;
+}
+
+.ui-nav .checkbox-custom-label {
+  margin-right: 5px;
+}
+
+.ui-nav .as-link {
+  text-decoration: underline;
+}
+
+.ui-nav .checkbox-custom-label + .as-link:hover {
+  text-decoration: none;
+}
+
+.ui-nav .checkbox-custom-view span {
+  margin-left: 5px;
 }
 
 .form-insurance-set {
@@ -3639,8 +3535,32 @@ li.search-show-map a:hover {
   font-family: "Roboto-Regular", sans-serif;
 }
 
-.step-three .form-half .form-half-col:last-of-type {
-  text-align: right;
+.step-three .progress {
+  margin-bottom: 44px;
+}
+
+.step-three .form-half {
+  margin-bottom: 8px;
+}
+
+.step-three .form-insurance-title {
+  font-size: 18px;
+}
+
+.ui-driver {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ui-driver .checkbox-custom-label {
+  margin-bottom: 18px;
+  margin-left: auto;
 }
 
 .btn-light-area {
@@ -3651,7 +3571,16 @@ li.search-show-map a:hover {
 }
 
 .btn-light-area .btn-light:not(:last-of-type) {
-  margin-right: 20px;
+  margin-right: 25px;
+}
+
+.ui-contacts-info {
+  padding-top: 45px;
+}
+
+.ui-contacts-info-title {
+  margin-bottom: 33px;
+  font-size: 28px;
 }
 
 .step-fo {
@@ -3696,7 +3625,7 @@ li.search-show-map a:hover {
   border-color: transparent;
 }
 
-.form-insurance-terms {
+.ui-terms-text {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3708,6 +3637,111 @@ li.search-show-map a:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .insurance-steps svg {
+    width: 15px;
+    height: 15px;
+  }
+  .insurance-steps .driver {
+    width: 18px;
+    height: 20px;
+  }
+  .insurance-steps-wrap {
+    padding: 0;
+  }
+  .insurance-steps-item {
+    padding: 14px 0;
+    font-size: 12px;
+    max-width: -webkit-calc(100% / 3);
+    max-width: calc(100% / 3);
+    -webkit-flex-basis: -webkit-calc(100% / 3);
+    -ms-flex-preferred-size: calc(100% / 3);
+    flex-basis: calc(100% / 3);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .insurance-steps-item:not(.insurance-steps-current) svg {
+    fill: #c0b7b7;
+  }
+  .insurance-steps-icon {
+    margin-bottom: 5px;
+  }
+  .insurance-steps-item:not(:last-of-type)::after {
+    margin-top: 0;
+    top: 18px;
+  }
+  .insurance-steps-item .arrow-right {
+    right: -25px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+  }
+  .insurance-steps-item:not(:first-of-type):not(:last-of-type)::after {
+    right: -5px;
+  }
+  .insurance-steps-item:not(:first-of-type):not(:last-of-type) .arrow-right {
+    right: -24px;
+  }
+  .form-insurance-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .form-insurance .ui-form-type {
+    margin-bottom: 33px;
+  }
+  .form-insurance .ui-form-type_label {
+    margin-right: 20px;
+  }
+  .form-insurance .ui-form-type_item {
+    padding-right: 12px;
+  }
+  .form-insurance .ui-form-type_item:not(:last-of-type) {
+    margin-right: 11px;
+  }
+  .insurance-form-discount {
+    font-size: 20px;
+  }
+  .insurance-form-discount .text-blue {
+    font-size: 21px;
+  }
+  .form-insurance-top {
+    margin-bottom: 28px;
+  }
+  .progress {
+    height: 40px;
+  }
+  .ui-nav {
+    padding-top: 23px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .ui-terms {
+    min-height: 161px;
+    padding-left: 48px;
+  }
+  .ui-terms .checkbox-custom-label {
+    margin-left: -48px;
+  }
+  .ui-terms .checkbox-custom-label + .as-link {
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .btn-light-area {
+    margin-bottom: 20px;
+  }
 }
 
 .worth-services {

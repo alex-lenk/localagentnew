@@ -29,7 +29,7 @@
     fill: #fff;
     position: absolute;
     right: -30px;
-    top: 21px;
+    top: 20px;
     width: 19px;
     height: 19px;
     z-index: 5;
@@ -97,115 +97,6 @@
   }
 }
 
-.form-insurance-bottom {
-  .checkbox-custom-label {
-    margin-right: 5px;
-  }
-  .as-link {
-    text-decoration: underline;
-  }
-
-  .checkbox-custom-label + .as-link:hover {
-    text-decoration: none;
-  }
-
-  .checkbox-custom-view span {
-    margin-left: 5px;
-  }
-}
-
 .insurance-steps-icon, .insurance-steps-text {
   z-index: 5;
-}
-
-@media (max-width: 768px) {
-  .insurance-steps {
-    svg {
-      width: 15px;
-      height: 15px;
-    }
-    .driver {
-      width: 18px;
-      height: 20px;
-    }
-  }
-  .insurance-steps-wrap {
-    padding: 0;
-  }
-  .insurance-steps-item {
-    padding: 14px 0;
-    font-size: 12px;
-    max-width: calc(100% / 3);
-    flex-basis: calc(100% / 3);
-    flex-direction: column;
-    align-items: center;
-    &:not(.insurance-steps-current) svg {
-      fill: #c0b7b7;
-    }
-  }
-  .insurance-steps-icon {
-    margin-bottom: 5px;
-  }
-  .insurance-steps-item:not(:last-of-type)::after {
-    margin-top: 0;
-    top: 18px;
-  }
-  .insurance-steps-item .arrow-right {
-    right: -24px;
-    top: 17px;
-    width: 16px;
-    height: 16px;
-  }
-  .insurance-steps-item:not(:first-of-type):not(:last-of-type) {
-    &::after {
-      right: -5px;
-    }
-    .arrow-right {
-      right: -21px;
-    }
-  }
-  .form-insurance-top {
-    flex-direction: column;
-  }
-  .form-insurance .ui-form-type {
-    margin-bottom: 33px;
-  }
-  .form-insurance .ui-form-type_label {
-    margin-right: 20px;
-    white-space: nowrap;
-  }
-  .form-insurance .ui-form-type_item {
-    padding-right: 12px;
-  }
-  .form-insurance .ui-form-type_item:not(:last-of-type) {
-    margin-right: 11px;
-  }
-  .insurance-form-discount {
-    font-size: 20px;
-    .text-blue {
-      font-size: 21px;
-    }
-  }
-  .form-insurance-top {
-    margin-bottom: 28px;
-  }
-  .progress {
-    height: 40px;
-  }
-  .form-insurance-bottom {
-    min-height: 161px;
-    padding-top: 23px;
-    padding-left: 48px;
-    flex-wrap: wrap;
-  }
-  .checkbox-custom-label {
-    margin-left: -48px;
-    + .as-link {
-      margin-right: 10px;
-      display: inline-block;
-    }
-  }
-  .form-control {
-    height: 69px;
-  }
 }

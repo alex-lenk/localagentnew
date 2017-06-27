@@ -269,6 +269,9 @@
   .form-insurance-wrap {
     padding: 65px 96px 46px;
   }
+  .form-insurance-top {
+    margin-top: -18px;
+  }
 }
 
 @media (min-width: 1201px) {
@@ -1009,9 +1012,6 @@
   .pagination-prev a:hover svg, .pagination-next a:hover svg {
     fill: #b5afaf;
   }
-  .step-two .form-insurance-bottom {
-    padding-left: 0;
-  }
   .step-two .btn-blue {
     margin-top: 0;
     min-width: 0;
@@ -1042,6 +1042,11 @@
   .btn-blue {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .ui-nav .btn-blue {
+    min-width: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .form-control {
     font-size: 4vw;
@@ -1396,6 +1401,10 @@
   .progress-text {
     font-size: 16px;
   }
+  .btn-help {
+    padding: 18px 32px 16px 24px;
+    max-width: 281px;
+  }
 }
 
 @media (min-width: 415px) and (max-width: 768px) {
@@ -1455,11 +1464,17 @@
   .page .header-form-insurance {
     height: 260px;
   }
-  .form-insurance-bottom .as-link {
+  .ui-terms .as-link {
     white-space: nowrap;
   }
   .insurance-steps {
     margin-bottom: 27px;
+  }
+  .form-insurance .ui-form-type_label {
+    white-space: nowrap;
+  }
+  .btn-light {
+    padding: 10px;
   }
 }
 
@@ -1525,10 +1540,7 @@
 
 /**/
 @media (max-width: 414px) {
-  .form-insurance-bottom {
-    min-height: 1px;
-  }
-  .form-insurance-bottom .btn-blue {
+  .ui-terms .btn-blue {
     margin-top: 38px;
   }
   .ui-form-type {
@@ -1536,6 +1548,18 @@
   }
   .form-insurance-top {
     margin-top: 0;
+  }
+  .btn-light {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .btn-light-area {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .btn-light-area .btn-light:not(:last-of-type) {
+    margin-right: 15px;
   }
 }
 
