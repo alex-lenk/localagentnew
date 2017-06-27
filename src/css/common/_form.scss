@@ -124,10 +124,6 @@ textarea.form-control {
 
 .required-field {
   position: relative;
-  .arrow {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .required-field .form-control {
@@ -137,7 +133,7 @@ textarea.form-control {
   background-color: transparent;
 }
 
-.required-field:before {
+.required-field::before {
   content: '*';
   position: absolute;
   top: 50%;
@@ -146,6 +142,7 @@ textarea.form-control {
   color: #df4a4a;
   line-height: 1;
   font-size: 23px;
+  z-index: 10;
   font-family: "Roboto-Regular", sans-serif;
 }
 
@@ -221,4 +218,8 @@ textarea.form-control {
   z-index: 5;
   position: relative;
   background-color: transparent;
+}
+
+.form-half-col {
+  position: relative;
 }

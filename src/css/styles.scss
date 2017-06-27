@@ -3,13 +3,14 @@
 @import "common/mixin";
 @import "common/fonts";
 @import "common/common";
+
+@import "blocks/header";
 @import "common/form";
 @import "common/checkbox-radio";
 @import "common/btn";
 @import "blocks/make-choice";
 @import "blocks/datepicker";
 @import "blocks/hint";
-@import "blocks/header";
 @import "blocks/navbar";
 @import "blocks/insurance";
 @import "blocks/manual";

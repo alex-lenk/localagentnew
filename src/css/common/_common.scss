@@ -1,3 +1,4 @@
+$linkColor: #4f8ad9;
 html,
 body {
   background: #ffffff;
@@ -7,14 +8,21 @@ body {
   font-family: "Roboto-Light", sans-serif;
 }
 
+/* Typography */
+
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
 a, .as-link {
-  color: #4f8ad9;
+  color: $linkColor;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 a:hover, .as-link:hover {
-  color: #4f8ad9;
+  color: #1b4d6e;
 }
 
 a:focus, .as-link:focus {
@@ -80,7 +88,7 @@ h4 {
 }
 
 .text-bold {
-  font-weight: 700;
+  font-weight: normal;
   font-family: "Roboto-Bold", sans-serif;
 }
 
@@ -101,15 +109,11 @@ h4 {
 }
 
 .text-blue {
-  color: #4f8ad9;
+  color: $linkColor;
 }
 
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
+.text-selection {
+  color: #6ba0b2;
 }
 
 .list-unstyled {
@@ -129,15 +133,6 @@ h4 {
   font-weight: normal;
   text-transform: uppercase;
   font-family: "Roboto-Bold", sans-serif;
-}
-
-button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
-  outline: none;
-  box-shadow: none;
-}
-
-.text-selection {
-  color: #6ba0b2;
 }
 
 .bg-full {

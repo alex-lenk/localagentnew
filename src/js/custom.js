@@ -40,6 +40,26 @@ $(document).ready(function () {
         }
     });
 
+    $(".car-model").select2({
+        placeholder: "Марка автомобиля",
+        allowClear: true
+    });
+
+    $(".body-type").select2({
+        placeholder: "Тип кузова",
+        allowClear: true
+    });
+
+    $(".need-policy").select2({
+        placeholder: "Когда нужен полис?",
+        allowClear: true
+    });
+
+    $(".convenient-time").select2({
+        placeholder: "Удобное время для связи",
+        allowClear: true
+    });
+
     $(".search-left-head-arrow").click(
         function () {
             $('.search-left').toggleClass("search-left-open search-left-closed");
@@ -71,7 +91,6 @@ $(document).ready(function () {
     $('.hint-box').on('click', function () {
         $(this).toggleClass('hint-box-open');
     });
-
 
     var statisticsCarousel = new Swiper('.statistics-carousel', {
         grabCursor: true,
