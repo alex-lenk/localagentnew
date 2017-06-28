@@ -8,7 +8,7 @@
     display: none;
   }
   .logo {
-    max-width: 221px;
+    max-width: 223px;
     img {
       max-width: 100%;
     }
@@ -66,8 +66,8 @@
 }
 
 .ui-nav {
-  margin-top: 40px;
-  padding-top: 50px;
+  margin: 40px -96px 0;
+  padding: 50px 96px 0;
   border-top: 1px solid #f2f9fb;
   display: flex;
   align-items: center;
@@ -92,6 +92,10 @@
 .form-insurance-set {
   margin-bottom: 10px;
   padding-top: 5px;
+}
+
+.wrap-yes-no {
+  margin-bottom: 40px;
 }
 
 .wrap-yes-no .radio-custom-label:not(:last-of-type) {

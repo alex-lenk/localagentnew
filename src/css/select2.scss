@@ -76,7 +76,6 @@
   left: -100000px;
   width: 100%;
   z-index: 1051;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .select2-results {
@@ -190,7 +189,6 @@
   margin-top: 30px;
   color: #585858;
   line-height: 1;
-  font-size: 18px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__clear {
@@ -201,7 +199,8 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
-  color: #999;
+  color: #b0aaaa;
+  font-size: 16px;
 }
 
 .select2-selection__arrow {
@@ -676,9 +675,9 @@
   }
 }
 
-.select2-container--below:not(.select2-container--open) {
-  .select2-selection--single {
+.select2-success {
     position: relative;
+  .select2-selection--single {
     border-color: #c8d3a1;
   }
   + .arrow {

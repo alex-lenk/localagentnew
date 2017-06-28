@@ -46,8 +46,15 @@
   opacity: 0;
 }
 
+.form-control.date-birth {
+    color: #b0aaaa;
+  @include RobotoRegular
+}
+
 .form-group {
   margin-bottom: 20px;
+  position: relative;
+  display: block;
 }
 
 .form-group .data {
@@ -68,12 +75,35 @@
   fill: #74a6b7;
 }
 
+.ui-input-placeholder {
+  position: absolute;
+  z-index: 5;
+  top: 32px;
+  left: 46px;
+  color: #b0aaaa;
+  font-size: 16px;
+  pointer-events: none;
+  transition: top 0.3s ease;
+  @include RobotoLight;
+  &::before {
+    content: '*';
+    position: absolute;
+    top: -6px;
+    left: -15px;
+    color: #df4a4a;
+    line-height: 1;
+    font-size: 23px;
+    z-index: 10;
+    font-family: "Roboto-Regular", sans-serif;
+  }
+}
+
 .form-control {
   width: 100%;
   height: 80px;
-  padding: 0 32px 2px;
+  padding: 0 32px 2px 45px;
   border: 1px solid #e5e5e5;
-  font-size: 16px;
+  font-size: 18px;
   display: block;
   border-radius: 3px;
   background-color: #ffffff;
@@ -81,6 +111,12 @@
   transition: all .3s ease;
   font-weight: normal;
   font-family: "Roboto-Light", sans-serif;
+  &:focus, &:valid {
+    padding-top: 30px;
+    + .ui-input-placeholder {
+      top: 19px;
+    }
+  }
 }
 
 input[type="text"], input[type="email"], input[type="name"], input[type="tel"], textarea {
@@ -122,32 +158,32 @@ textarea.form-control {
   font-family: "Roboto-Medium", sans-serif;
 }
 
-.required-field {
-  position: relative;
-}
-
 .required-field .form-control {
-  padding-left: 45px;
   z-index: 5;
   position: relative;
   background-color: transparent;
+  &:focus + .ui-input-placeholder::before {
+    top: -5px;
+  }
 }
 
-.required-field::before {
-  content: '*';
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  margin-top: -14px;
-  color: #df4a4a;
-  line-height: 1;
-  font-size: 23px;
-  z-index: 10;
-  font-family: "Roboto-Regular", sans-serif;
-}
-
-.required-field[class^="col-"]:before, .required-field[class*=" col-"]:before {
-  left: 46px;
+.ui-required-field {
+  &::before {
+    content: '*';
+    position: absolute;
+    top: 28px;
+    left: 24px;
+    color: #df4a4a;
+    line-height: 1;
+    font-size: 23px;
+    z-index: 10;
+    font-family: "Roboto-Regular", sans-serif;
+  }
+  .form-control {
+    padding-left: 45px;
+    z-index: 5;
+    position: relative;
+  }
 }
 
 .form-group-textarea {

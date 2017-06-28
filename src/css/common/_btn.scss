@@ -61,6 +61,7 @@
   font-size: 15px;
   color: #585858;
   border: 1px solid #e5e5e5;
+  cursor: pointer;
   font-family: "Roboto-Light", sans-serif;
   &:not(.active):hover {
     border-color: #4f8ad9;
@@ -138,6 +139,9 @@
   font-size: 15px;
   color: #505b6a;
   font-family: "Roboto-Bold", sans-serif;
+  .arrow-right {
+    transition: fill .3s ease;
+  }
 }
 
 .btn-back:hover {
@@ -166,6 +170,9 @@
   position: relative;
   z-index: 9;
   float: right;
+  &:hover, &:focus {
+    background-color: #4f8ad9;
+  }
 }
 
 .btn-help .phone-help {

@@ -60,6 +60,11 @@ $(document).ready(function () {
         allowClear: true
     });
 
+    jQuery(function($){
+        $(".date-birth").mask("99.99.9999",{placeholder:"05.09.1980"});
+    });
+
+
     $(".search-left-head-arrow").click(
         function () {
             $('.search-left').toggleClass("search-left-open search-left-closed");
