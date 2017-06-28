@@ -15,9 +15,6 @@
 
 .contacts-form {
   display: none;
-  .form-control:not(textarea) {
-    height: 55px;
-  }
   .required-field.col-md-12::before {
     top: 15px;
     margin-top: 0;
@@ -28,6 +25,12 @@
     padding: 22px 44px 18px 45px;
     font-size: 16px;
   }
+}
+
+.contacts-button {
+  width: 100%;
+  overflow: hidden;
+  text-align: right;
 }
 
 .contacts-emails {

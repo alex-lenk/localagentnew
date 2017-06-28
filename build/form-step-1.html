@@ -2,34 +2,37 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-<title>LocalAgent</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>LocalAgent</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-<meta content="telephone=no" name="format-detection">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
 
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="css/datepicker.min.css">
-<link rel="stylesheet" href="css/select2.css">
+    <!--
+    Эти 4 библитеки используюся в проекте, я их поместил с помощью сборщика Gulp в файл lib.css
+    если вам нужно чтобы все стили были видны на странице, просто раскомментируйте нижнии секции со стилями, а строку
+    с lib.css просто удалите
 
-<!--<link rel="stylesheet" href="css/lib.css">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    -->
 
-<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 
-<link rel="stylesheet" href="css/media.css">
-
-<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-<link rel="manifest" href="img/favicon/manifest.json">
-<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="img/favicon/favicon.ico">
-<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
@@ -37,14 +40,14 @@
     <header class="header-insurance">
         <div class="container">
             <div class="logo">
-    <a href="index.html">
-        <picture>
-            <source srcset="img/logo-ui@2x.png"
-                    media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
-            <img src="img/logo-ui.png" alt="LocalAgent - Умное страхование">
-        </picture>
-    </a>
-</div>
+                <a href="index.html">
+                    <picture>
+                        <source srcset="img/logo-ui@2x.png"
+                                media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
+                        <img src="img/logo-ui.png" alt="LocalAgent - Умное страхование">
+                    </picture>
+                </a>
+            </div>
 
 
             <button class="btn-help btn btn-white">
@@ -107,10 +110,10 @@
         <form action="#" class="form-insurance-wrap">
             <div class="form-insurance-top">
                 <ul class="ui-form-type">
-    <li class="ui-form-type_label">Тип страховки:</li>
-    <li class="ui-form-type_item ui-form-type_current">КАСКО</li>
-    <li class="ui-form-type_item">Осаго</li>
-</ul>
+                    <li class="ui-form-type_label">Тип страховки:</li>
+                    <li class="ui-form-type_item ui-form-type_current">КАСКО</li>
+                    <li class="ui-form-type_item">Осаго</li>
+                </ul>
 
 
                 <div class="insurance-form-discount"><span class="text-blue">Скидка 3%</span> на полис Каско</div>
@@ -315,19 +318,21 @@
 </div>
 
 <script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/custom.js"></script>
+
+<!--
+Эти 6 плагинов используюся в проекте, я их поместил с помощью сборщика Gulp в файл lib.js
+если вам нужно чтобы все плагины были видны на странице, просто раскомментируйте нижнии секции со скриптами,
+а строку с lib.js просто удалите
+
 <script src="js/svgxuse.min.js"></script>
 <script src="js/SmoothScroll.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
-<script src="js/datepicker.min.js"></script>
 <script src="js/select2.full.min.js"></script>
 <script src="js/jquery.maskedinput.js"></script>
-
-<!--<script src="js/lib.js"></script>-->
-
-<script src="js/custom.js"></script>
-
-<script src="http://cdn.trackduck.com/toolbar/prod/td.js" async data-trackduck-id="58d6467f8528fe714ed2f9e9"></script>
+-->
 
 
 </body>
