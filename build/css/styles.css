@@ -473,15 +473,19 @@ header .container {
   font-family: "Roboto-Light", sans-serif;
 }
 
-.form-control:focus, .form-control:valid {
+.form-control:focus {
   padding-top: 30px;
 }
 
-.form-control:focus + .ui-input-placeholder, .form-control:valid + .ui-input-placeholder {
+.form-control:focus + .ui-input-placeholder {
   top: 19px;
 }
 
-input[type="text"], input[type="email"], input[type="name"], input[type="tel"], textarea {
+input[type="text"],
+input[type="email"],
+input[type="name"],
+input[type="tel"],
+textarea {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -497,6 +501,10 @@ textarea.form-control {
   padding: 19px 47px 10px;
   resize: none;
   overflow: hidden;
+}
+
+textarea.form-control:focus {
+  padding-top: 40px;
 }
 
 .form-hours {
@@ -587,15 +595,6 @@ textarea.form-control {
   z-index: 2;
 }
 
-.field-filled .selected {
-  width: 15px;
-  height: 12px;
-  position: absolute;
-  top: 21px;
-  right: 49px;
-  fill: #a7c343;
-}
-
 .field-filled::before {
   opacity: 0;
   visibility: hidden;
@@ -614,12 +613,30 @@ textarea.form-control {
   z-index: 2;
 }
 
+.field-filled .selected {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 21px;
+  right: 49px;
+  fill: #a7c343;
+}
+
 .field-filled .form-control {
+  padding-top: 30px;
   padding-left: 30px;
   border-color: #c8d3a1;
   z-index: 5;
   position: relative;
   background-color: transparent;
+}
+
+.field-filled textarea.form-control {
+  padding-top: 40px;
+}
+
+.field-filled .ui-input-placeholder {
+  top: 19px;
 }
 
 .form-half-col {
@@ -959,6 +976,11 @@ textarea.form-control {
 
 .btn-help:hover, .btn-help:focus {
   background-color: #4f8ad9;
+  color: #fff;
+}
+
+.btn-help:hover svg, .btn-help:focus svg {
+  fill: #fff;
 }
 
 .btn-help .phone-help {
@@ -3216,3 +3238,5 @@ li.search-show-map a:hover {
   left: 0;
   bottom: 0;
 }
+
+/*# sourceMappingURL=../maps/styles.css.map */

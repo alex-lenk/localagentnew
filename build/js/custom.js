@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     /*
      для переключения класов пунктов в шапке формы на главной и на странице с формами
      form-step-1.html
@@ -116,6 +115,16 @@ $(document).ready(function () {
         $(this).toggleClass('hint-box-open');
     });
 
+
+    // BEGIN: Для ошибок форм
+    $(".form-control").change(function () {
+        if ($(this).val().trim().length) {
+            $(this).parent().addClass("field-filled");
+        } else {
+            $(this).parent().removeClass("field-filled");
+        }
+    });
+    //END
 });
 
 
